@@ -1,0 +1,121 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+#以下是crud界面要用到的值
+UserInfos=用户信息
+RoleInfos=角色信息
+Products=产品信息
+Orgnizations=机构信息
+Functions=功能点信息
+Countrys=国家信息
+Areas=地区信息
+
+crud.title=记录后台管理
+crud.home=后台首页
+crud.blank=新加
+crud.index.title=请选择要维护的记录类别
+crud.index.objectType=记录类型
+crud.index.action=
+crud.index.add=增加记录
+crud.add=增加 &{%s}
+crud.list.title=&{%s}
+crud.list.size=%d 条 记录
+crud.list.totalSize=共 %d 条记录
+crud.pagination.previous=« 上一页
+crud.pagination.next=下一页 »
+crud.pagination.last=最后一页 »»
+crud.pagination.first=«« 第一页
+crud.show.title=修改 &{%s}
+crud.save=保存
+crud.saveAndContinue=保存并继续修改
+crud.cancel=取消
+crud.hasErrors=输入有误,请修改
+crud.blank.title=增加 &{%s}
+crud.saveAndAddAnother=保存并创建另外一条记录
+crud.delete=删除 &{%s}
+crud.created=&{%s} 创建成功
+crud.saved=The &{%s} 保存成功
+crud.deleted=The &{%s} 已删除
+crud.delete.error=不能删除这条记录
+crud.search=搜索
+crud.none=(无)
+crud.selectValue=(请选择一个值)
+
+crud.help.required=必填.
+crud.help.minlength=最小长度 %d.
+crud.help.maxlength=最大长度 %d.
+crud.help.email=请输入有效的email地址.
+crud.help.dateformat=&{%s} format.
+crud.help.numeric=数字.
+crud.help.min=必须大于 %d.
+crud.help.future=在将来.
+crud.help.past=在过去.
+crud.help.after= %s 之后.
+crud.help.before=%s 之前.
+crud.help.range=在 %d , %d 之间
+
+
+#以下是相关的键值
+model.base.key.required=映射表键 必填
+model.base.value.required=映射表值 必填
+
+validate.pwd2Diff=两次密码不一样
+
+val.userName.required=用户名必填
+
+
+#以下是用于crud模块的
+bizId=业务编码
+bizName=业务值
+
+#以下是校验提示信息, 这里使用的1--400的保留号(系统级)
+# 代号意义:
+# 20 必须
+validation.required=20__%1$s 必须
+
+valid.username.required=20__用户名必须
+valid.pwd.required=20__密码必须
+valid.mac.required=20__mac地址必须
+valid.pid.required=20__pid产品id必须
+valid.name.required=20__名称必须
+valid.id.required=20__id必须
+valid.groupId.required=20__group id必须
+valid.secCode.required=20__证券代码必须
+valid.token.required=20__token必须
+valid.indexContent.required=20__自定义指标内容必须
+valid.category.required=20__类别必须
+
+valid.json.error=30_json格式错误
+
+
+
+
+#以下是给api产生的信息, 这里主要是考虑以后是否国际化,或者以后考虑使用键值替换
+#这里用 代号__描述 来表明一个错误. 其中注意的是代号在每个国际化文件中是不变的. 客户端可以根据这个做为判断
+#错误号 1--400 保留
+api.login.user.nofound=400__没有找到用户
+api.login.user.errorPwd=401__密码错误
+api.login.user.maxlogin=402__已达到最大登陆数
+api.login.user.forbbiden=403__账号未激活
+api.login.user.timeout=404__账号已过期
+
+api.cust.entityNoFound=500__相应实体不存在
+api.cust.secNoFound=500__[%2$s]证券代码不存在
+
+
+jpaquery.error=510__jpa查询错误
+jpaquery.timeout.error=511__jpa查询超时
+jpa.persistence.error=512__jpa错误.[%1$s]
+jpa.persistence.constraintViolationException=512__jpa 违反约束.[%1$s]
+jpa.persistence.pessimisticLockException=512__jpa sql语句悲观锁定.[%1$s]
+jpa.persistence.JDBCConnectionException=512__jpa连接错误
+jpa.persistence.queryTimeoutException=512__jpa查询超时.[%1$s]
+jpa.persistence.SQLGrammarException=512__jpa sql语法错误.[%1$s]
+
+
+sqlexception.error=515_sql语句错误
+
+jsonSyntax.error=600__json转换时语法错误
+
+finally.exception.error=65536_服务器错误

@@ -1,0 +1,422 @@
+h1. 虚拟产品对外接口(iquant)
+
+h2. 统一说明
+
+p(note). **特别注意**
+以下api都要求带ntToken参数, 也就是都需要token做为参数
+
+h4. 返回值统一说明
+
+**参数校验错误** 返回, 如下格式的json对象
+
+bc. {
+  "validateErrors":[
+      {"key":"id", "msg":"Incorrect value"},
+      {"key":"id", "msg":"20__id必须"}
+   ]
+}
+
+也就是返回的json对象的key值为 **@validateErrors@** , 其值为一个数组类型, 每个错误对象包含键
+**@key@** 对应的参数名
+**@msg@** 错误信息. 其中错误信息以 @错误号__描述信息@ 的格式. 其中错误号的对应, 请参考 "错误集中定义":files/messages.txt
+
+**操作错误** 返回, 如下格式的json对象
+
+bc. {
+  "success" : false,
+  "errors" : [
+    {"key":"name", "msg":"名称重复"}
+  ]
+}
+
+消息格式:
+注意这里列出的是 @名称重复@ 这个消息. 用 @key@ 指明字段, @msg@ 指明内容
+
+**其它错误** 返回, 如下格式的json对象
+
+bc. {"error":"500_相应实体不存在"}
+
+也就是返回的json对象的key为 **@error@** , 其值为一个字符串, 描述错误信息.
+
+**增加成功**, 返回如下格式的json对象
+
+bc. {"id":5,"success":true}
+
+**@id@** 增加成功的记录id.
+
+**修改成功**, 返回如下格式的json对象
+
+bc. {"id":5,"success":true}
+
+**@id@** 修改的记录id.
+
+**删除成功**, 返回如下格式的json对象
+
+bc. {"id":5,"effect":1,"success":true}
+
+**@id@** 删除的记录id.
+**@effect@** 删除记录的条数
+
+h2. 策略类
+
+h3. 根据策略的状态返回用户的策略列表
+
+||项||说明||
+| url | /VirtualProductCt/fetchStrategyWithState |
+| http Method | get |
+| 返回结果 | 见下面的json返回格式说明 |
+
+*参数说明*
+# **status** int 策略状态.
+#* 1.待审核(也就是上传完成),
+#* 2. 沙箱测试
+#* 3. 回测中
+#* 4. 上架
+#* 5 下架
+
+*json返回格式举例说明*
+
+bc. [
+    {
+      "id" : 1,
+      "name" : "策略1",
+      "status" : 1,
+      "fundsProportion" : 0.2 //资金使用比例
+    }
+]
+
+h3. 检查策略名称是否唯一
+
+||项||说明||
+| url | /UploadFilesCt/checkStategyOnlyName |
+| http Method | get |
+| 返回结果 | 唯一返回 @true@, 否则返回 @false@ |
+
+*参数说明*
+# name 要检查的名称
+
+h3. 策略上传 (文件上传)
+
+||项||说明||
+| url | /UploadFilesCt/uploadStrage |
+| http Method | post |
+| 返回结果 | 见下面说明 |
+
+*参数说明*
+# attachment 上传的文件对象
+# otherParam 其它参数. json格式, 格式为
+
+bc. {
+   	"sname" : "策略名称",
+   	"tradeType": 1, // 策略类型
+   	"tradeVariety" : 1, //交易品种
+   	"provider" : "策略师姓名",
+   	"providerDesp" : "策略师简介",
+   	"desp" : "策略简介",
+   	"lookBackStime" : "2012-03-12", //回测开始时间
+   	"lookBackEtime" : "2013-03-13" //回测结束时间
+}
+
+交易类型: 1. 选股型 2. 择时型 3. 交易型 4. 其他
+交易品种: 1. 股票 2. 期货 3. 混合
+
+*返回结果说明*
+# 成功, 返回json对象
+bc. {
+    "success":true,
+    "message":"操作成功"
+}
+
+# 失败返回 json对象
+bc. {
+    "success":false,
+    "message":"失败的原因"
+}
+
+h3. 返回策略的标的信息
+
+||项||说明||
+| url | /VirtualProductCt/fetchStrategyStockInfo |
+| http Method | get |
+| 参数 | 见参数描述 |
+| 返回结果 | 见返回结果描述 |
+
+*参数说明*
+# ids   string类型. 策略的id. 如果要查多个用 @,@ 号分割开来. 如 1,2,3
+
+*返回结果说明*
+返回json格式
+
+bc. [
+    "strategyId" : 1, //策略id
+    "strategySecInfos" : [ //这个策略的标的信息(数组)
+        {
+            "contractMultiplier" : 0.3, //合约乘数
+            "marginLevel" : 0.4, //保证金比例
+            "maxShare" : 0.1, //最大持仓量
+            "currency" : "CNY", //币种
+            "exchangeType" : "ExchangeType.SZSE", //市场类型
+            "secId" : "000001", //标的id
+            "secName" : "平安银行" //标的名称
+        },
+        {
+            "contractMultiplier" : 0.4, //合约乘数
+            "marginLevel" : 0.5, //保证金比例
+            "maxShare" : 0.2, //最大持仓量
+            "currency" : "CNY", //币种
+            "exchangeType" : "ExchangeType.SZSE", //市场类型
+            "id" : "600000", //标的id
+            "name" : "浦发银行" //标的名称
+        }
+    ]
+]
+
+h2. 交易资金帐号
+
+h3. 增加一个交易帐号
+
+||项||说明||
+| url | /VirtualProductCt/addTradeAccount |
+| http Method | post |
+| url上的参数说明 | 无 |
+| body json格式 | 参数格式见下面描述 |
+| 返回结果 | 见上统一说明 |
+
+*body json 参数格式说明*
+
+bc. {
+     "name" : "test",
+     "account" : "1232",
+     "password" : "1332",
+     "type" : 1,  //type 取值为: 0:期货, 1:股票
+     "clientId" : "232323", //交易柜台
+     "targetCompId" : "compid_id", //帐号命令路由地址
+     "hedgeType" : 0 //0. 投机(Speculation), 1. 套保(Hedge)
+}
+
+
+h3. 删除一个交易帐号
+
+||项||说明||
+| url | /VirtualProductCt/delTradeAccount |
+| http Method | post |
+| 返回结果 | 见上统一说明 |
+
+*参数说明*
+# **id** int 交易帐号的id
+
+
+h3. 修改一个交易帐号信息
+
+||项||说明||
+| url | /VirtualProductCt/editTradeAccount |
+| http Method | post |
+| url上的参数说明 | 无 |
+| body json格式 | 参数格式见下面描述 |
+| 返回结果 |  |
+
+*body json 参数格式说明*
+
+bc. {
+  "id" : 1,
+  "name" : "test",
+  "account" : "1232",
+  "password" : "1332",
+  "type" : 1, //type 取值为: 0:期货, 1:股票
+  "clientId" : "232323", //交易柜台
+  "targetCompId" : "compid_id", //帐号命令路由地址
+  "hedgeType" : 0 //0. 投机(Speculation), 1. 套保(Hedge)
+}
+
+h3. 返回用户的交易帐号
+
+||项||说明||
+| url | /VirtualProductCt/fetchTradeAccount |
+| http Method | get |
+| 返回结果 | 见返回json格式说明 |
+
+*返回json格式说明*
+
+bc. [
+    {
+      "id" : 123,
+      "name" : "test",
+      "account" : "2323",
+      "password" : "2323",
+      "type" : 1,
+      "clientId" : "232323", //交易柜台
+      "targetCompId" : "compid_id", //帐号命令路由地址
+      "hedgeType" : 0 //0. 投机(Speculation), 1. 套保(Hedge)
+    }
+]
+
+h2. 虚拟产品类
+
+h3. 增加一个虚拟产品(全部信息)
+
+||项||说明||
+| url | /VirtualProductCt/addVirtualProductFullInfo |
+| http Method | post |
+| body json格式 | 参数格式见下面描述 |
+| 返回结果 | 见返回json格式说明 |
+
+*json参数格式*
+
+bc. {
+    "name":"产品1",
+    "tradeAccounts": [
+        {
+            "refId" : -1,  //关联id, -1表示是新加
+            "accountId" : 1 //帐号id
+        }
+    ],
+    "strategys":[
+        {
+            "refId" : -1, //关联id, -1表示是新加
+            "strategyId" : 122, //策略id
+            "fundsProportion" : 0.5, //资金使用比例
+            "strategySecInfos" : [
+                {
+                    "contractMultiplier": 0.1,  //合约乘数
+                    "marginLevel": 1,           //保证金比例
+                    "maxShare": 3.3,            //最大持仓量
+                    "currency": "CNY",          //币种
+                    "exchangeType": "ExchangeType.SZSE", //市场代码
+                    "secId": "000001",             //标的代码
+                    "secName": "平安银行"          //标的名称
+                }
+            ]
+        }
+    ]
+}
+
+*返回json格式说明*
+
+bc. {
+     "id" : 1,
+     "name" : "产品1",
+     "strategys" : [
+         {
+             "refId" : 1,
+             "strategyId" : 23, //策略id
+             "name" : "策略1",
+             "fundsProportion" : 0.3, //资金使用比例
+             "strategyParam" : [
+                {
+                        "contractMultiplier": 0.1,  //合约乘数
+                        "marginLevel": 1,           //保证金比例
+                        "maxShare": 3.3,            //最大持仓量
+                        "currency": "CNY",          //币种
+                        "exchangeType": "ExchangeType.SZSE", //市场代码
+                        "secId": "000001",             //标的代码
+                        "secName": "平安银行"          //标的名称
+                }
+             ]
+         }
+     ],
+     "tradeAccounts" : [
+         {
+             "refId" : 1,
+             "accountId" : 33, //帐号id
+             "name" : "帐号1",
+             "account" : "12323",
+             "password" : "232",
+             "type" : 1
+         }
+     ]
+}
+
+h3. 修改产品信息
+
+||项||说明||
+| url | /VirtualProductCt/editVirtualProduct |
+| http Method | post |
+| body json格式 | 参数格式见下面描述 |
+| 返回结果 | 见统一说明 |
+
+*json参数说明*
+
+bc. {
+    "id" : 1, //产品id
+    "name":"产品1",
+    "tradeAccounts":[
+        {
+            "refId" : -1,  //关联id, -1表示是新加
+            "accountId" : 1 //帐号id
+        }
+    ],
+    "strategys":[
+        {
+            "refId" : -1, //关联id, -1表示是新加
+            "strategyId" : 122, //策略id
+            "fundsProportion" : 0.5, //资金使用比例
+            "strategySecInfos" : [
+                {
+                    "contractMultiplier": 0.1,  //合约乘数
+                    "marginLevel": 1,           //保证金比例
+                    "maxShare": 3.3,            //最大持仓量
+                    "currency": "CNY",          //币种
+                    "exchangeType": "ExchangeType.SZSE", //市场代码
+                    "secId": "000001",             //标的代码
+                    "secName": "平安银行"          //标的名称
+                }
+            ]
+        }
+    ]
+}
+
+h3. 删除一个产品. 会删除产品记录及关联的帐号,策略关联关系
+
+||项||说明||
+| url | /VirtualProductCt/delVirtualProduct |
+| http Method | post |
+| 返回结果 | 见统一说明 |
+
+*参数说明*
+# **id** int 产品的id
+
+h3. 返回用户的全部的虚拟产品列表
+
+||项||说明||
+| url | /VirtualProductCt/fetchUserVirtualProduct |
+| http Method | get |
+| 返回结果 | 见返回json格式说明 |
+
+*返回json格式说明*
+
+bc. [
+    {
+         "id" : 1,
+         "name" : "产品1",
+         "strategys" : [
+             {
+                 "refId" : 1,  //关联关系id
+                 "strategyId" : 23, //策略id
+                 "name" : "策略1",
+                 "fundsProportion" : 0.3, //资金使用比例
+                 "ctime":"2013-05-10 00:00:00", //创建时间
+                 "strategyParam" : [
+                    {
+                            "contractMultiplier": 0.1,  //合约乘数
+                            "marginLevel": 1,           //保证金比例
+                            "maxShare": 3.3,            //最大持仓量
+                            "currency": "CNY",          //币种
+                            "exchangeType": "ExchangeType.SZSE", //市场代码
+                            "secId": "000001",             //标的代码
+                            "secName": "平安银行"          //标的名称
+                    }
+                 ]
+             }
+         ],
+         "tradeAccounts" : [
+             {
+                 "refId" : 1, //关联关系id
+                 "accountId" : 33, //帐号id
+                 "name" : "帐号1",
+                 "account" : "12323",
+                 "password" : "232",
+                 "type" : 1
+             }
+         ]
+    }
+]

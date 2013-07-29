@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>activate  sql</comment>
+
+    <!--查询用户的产品列表-->
+    <entry key="findUserRuntimeStrategyByIds">
+        <![CDATA[
+        SELECT
+             id
+        FROM
+             virtual_product_strategy
+        WHERE
+             create_uid=? and status=1
+
+        ]]>
+    </entry>
+
+    <!--删除用户的产品列表-->
+    <entry key="deleteUserProduct">
+        <![CDATA[
+            UPDATE
+              virtual_product
+            SET
+              status=-100
+            where create_uid=?
+       ]]>
+    </entry>
+    <!--删除用户的交易账号列表-->
+    <entry key="deleteUserTradeAccount">
+        <![CDATA[
+            UPDATE
+              virtual_product_trade_account
+            SET
+              status=-100
+            where create_uid=?
+       ]]>
+    </entry>
+    <!--删除用户的产品策略关联ID列表-->
+    <entry key="deleteUserStrategyProduct">
+        <![CDATA[
+            UPDATE
+              virtual_product_strategy
+            SET
+              status=-100
+            where create_uid=?
+       ]]>
+    </entry>
+    <!--查询用户的产品列表-->
+    <entry key="deleteRuntimeStrategyByIds">
+        <![CDATA[
+            delete from
+              qstrategy
+            where StrategyID
+             in(#ids#)
+       ]]>
+    </entry>
+
+    <!--删除用户的产品策略关联ID列表-->
+    <entry key="deleteUserStrategy">
+        <![CDATA[
+            UPDATE
+              strategy_baseinfo
+            SET
+              status=-100
+            where stup_uid=?
+       ]]>
+    </entry>
+
+</properties>

@@ -1,0 +1,273 @@
+<style type="text/css">
+    #addTradeAccountBtn, #tradeAccountList{ margin-left: 15px;}
+    #tradeAccountList li span{ display: inline-block; margin-right: 15px;}
+</style>
+
+<form  action="" method="post" class="form_new_user" id="newuserform">
+    <div style="overflow-y: auto;overflow-x:hidden; height: 300px" >
+    <table width="100%" class="tbl_new_user" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="20%" align="right">  <span class="red">*</span>姓名：</td>
+            <td width="80%">
+                <p class="p_valid">
+                    <input type="text"  name="userInfo.name" id="fullname" class="new_input">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">2～12位中文、字母、数字、下划线</span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><span class="red">*</span>帐号：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" id="new_user_account" name="userInfo.account" class="new_input">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">6位数字</span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><span class="red">*</span>密码：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="password" class="new_input" id="newuser_pwd" name="userInfo.password">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">密码</span>
+                </font>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><span class="red">*</span>再次输入密码：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="password" class="new_input" id="newuser_rePassword" name="userInfo.rePassword">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">重复密码</span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">联系电话：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" class="new_input" id="userInfo.phone" name="userInfo.phone">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">联系电话</span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><span class="red">*</span>E-mail：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" class="new_input" name="userInfo.email" id="new_user_email">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text">邮箱</span>
+                </font>
+            </td>
+
+        </tr>
+        <tr>
+            <td align="right">身份证号：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" class="new_input" id="userInfo.idCard" name="userInfo.idCard">
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text"></span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">资金帐号:<input type="hidden" name="userTradeAccountStr" id="userTradeAccountStr" value=""></td>
+            <td>
+                <img src="@{'/public/images/admin/role_add.png'}" alt="增加" id="addTradeAccountBtn">
+            </td>
+        </tr>
+        <tr>
+           <td align="right">&nbsp;</td>
+           <td>
+               <ul id="tradeAccountList"></ul>
+           </td>
+        </tr>
+
+        *{<tr>}*
+            *{<td align="right">所属营业部：</td>}*
+            *{<td>}*
+                *{<div class="dialog_box">}*
+
+                    *{<input type="hidden" autocomplete="off" value="1" id="reportDate_2" name="depId">}*
+                    *{<input type="hidden" autocomplete="off" id="reportName_2">}*
+                    *{<div id="select_info_year1_2" class="sel_84_dialog new_sel_d">营业部1}*
+                    *{</div>}*
+                    *{<ul id="options_year1_2" class="sel_91_option new_sel_option" style="display: none;">}*
+
+                    *{#{list items : saleDepartments, as : 'item' }}*
+                        *{<li data-value="${item.id}">${item.name}</li>}*
+                    *{#{/list}}*
+                    *{</ul>}*
+                *{</div>}*
+            *{</td>}*
+        *{</tr>}*
+        *{<tr>}*
+            *{<td align="right">资金帐号：</td>}*
+            *{<td>}*
+                *{<p class="p_valid">}*
+                    *{<input type="text" class="new_input" name="userInfo.capitalAccount"/>}*
+                *{</p>}*
+                *{<font class="new_user_tips p_l_10 nu_two">}*
+                    *{<span class="tips_ico">&nbsp;</span>}*
+                    *{<span class="tips_text"></span>}*
+                *{</font>}*
+            *{</td>}*
+        *{</tr>}*
+        <tr>
+            <td align="right">联系地址：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" class="new_input" name="userInfo.address" />
+                </p>
+            </td>
+            <font class="new_user_tips p_l_10 nu_two">
+                <span class="tips_ico">&nbsp;</span>
+                <span class="tips_text"></span>
+            </font>
+        </tr>
+        <tr>
+            <td align="right">邮编：</td>
+            <td>
+                <p class="p_valid">
+                    <input type="text" class="new_input" name="userInfo.postCode" />
+                </p>
+                <font class="new_user_tips p_l_10 nu_two">
+                    <span class="tips_ico">&nbsp;</span>
+                    <span class="tips_text"></span>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="new_u_control" style="margin: 30px 0 0 50px;">
+        <input type="reset" value="button" class="new_user_cancle">
+        <input type="button" onclick="javascript:$('#newuserform').submit()"  value="submit" class="new_user_register">
+    </div>
+</form>
+
+<style type="text/css">
+    #addTradeAccountForm label { display:block; }
+    #addTradeAccountForm input { display:block; }
+    #addTradeAccountForm input.text { margin-bottom:12px; width:95%; padding: .4em; }
+    #addTradeAccountForm fieldset { padding:0; border:0; margin-top:25px; }
+</style>
+
+*{增加资金帐号的弹出框}*
+<div id="addTradeAccountDialog" title="增加资金帐号" style="display: none;">
+    <form id="addTradeAccountForm">
+        <fieldset>
+            <label for="ac_name">帐号名</label>
+            <input type="text" name="name" id="ac_name"  />
+            <label for="ac_account">帐号</label>
+            <input type="text" name="account" id="ac_account" value=""  />
+            <label for="ac_password">密码</label>
+            <input type="text" name="password" id="ac_password" value=""  />
+            <label for="ac_type">类型</label>
+            <select name="type" id="ac_type">
+                <option value="0">期货</option>
+                <option value="1">股票</option>
+            </select>
+            <label for="ac_clientId">期货公司客户号</label>
+            <input type="text" name="clientId" id="ac_clientId" value=""  />
+            <label for="ac_targetCompId">订单通道路由标识</label>
+            <input type="text" name="targetCompId" id="ac_targetCompId" value=""  />
+            <label for="ac_hedgeType">投机\套保标识</label>
+            <select name="hedgeType" id="ac_hedgeType">
+                <option value="0">投机</option>
+                <option value="1">套保</option>
+            </select>
+        </fieldset>
+    </form>
+</div>
+
+
+<script type="text/javascript">
+var userTradeAccout = []; //用户交易帐号, 全局变量
+function addUserTradeAccout(item){
+    userTradeAccout.push(item);
+}
+//删除掉一个选项
+function delUserTradeAccout(randId){
+    userTradeAccout = $.grep(userTradeAccout, function(n, i){
+        var dd = n.randId != randId;
+        return n.randId != randId;
+    })
+}
+
+$("#addTradeAccountBtn").click(function(){
+    //先把界面上的元素内容清空
+    $("#ac_name").val("");
+    $("#ac_account").val("");
+    $("#ac_password").val("");
+    $("#ac_type").val("");
+    $("#ac_clientId").val("");
+    $("#ac_targetCompId").val("");
+    $("#ac_hedgeType").val("");
+
+    $("#addTradeAccountDialog").dialog("open");
+});
+
+$("#addTradeAccountDialog").dialog({
+    position: {
+        at: "center"
+    },
+    autoOpen: false,
+    height: 420,
+    width: 350,
+    modal: true,
+    buttons: {
+        "增加": function() {
+            var item = $("#addTradeAccountForm").serializeJson();
+            item.randId = getRandomInt(-9999999, 9999999);
+            addUserTradeAccout(item);
+            //把元素列出来
+            var itemStr = "<li><span>"+ item.name +"</span><span><img rnd='" + item.randId + "' class='tradeAccounDelItem' src='/public/images/admin/role_remove.png'></span></li>";
+            $("#tradeAccountList").append(itemStr);
+            $("#userTradeAccountStr").val(JSON.stringify(userTradeAccout));
+            $(this).dialog( "close" );
+        },
+        "取消": function() {
+            $(this).dialog( "close" );
+        }
+    },
+    close: function() {
+        $(this).dialog( "close" );
+    }
+});
+
+$(".tradeAccounDelItem").live("click", function(){
+    var $this = $(this);
+    var rnd = $this.attr("rnd");
+    delUserTradeAccout(rnd);
+    $this.closest("li").remove();
+});
+
+</script>
+

@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'策略上传测试' /}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span6">
+            <h4>策略上传</h4>
+        #{form @UploadFilesCt.uploadStrage(), method:'post', enctype:"multipart/form-data"}
+            文件: <input type="file" name="file"> <br/>
+            其它参数: <textarea rows="10" cols="120" name="otherParam"></textarea><br/>
+            token: <input type="text" name="ntToken"><br/>
+            <input type="submit" value="提交">
+        #{/form}
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span6">
+            <h4>取策略标的信息</h4>
+        #{form @VirtualProductCt.fetchStrategyStockInfo(), method:'get'}
+            策略id: <input type="text" name="ids"> <br/>
+            token: <input type="text" name="ntToken"><br/>
+            <input type="submit" value="提交">
+        #{/form}
+        </div>
+    </div>
+</div>

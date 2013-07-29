@@ -1,0 +1,40 @@
+#{extends 'main.html' /}
+#{set title:'广告' /}
+
+<div class="container-fluid">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="@{'/public/images/ad1.png'}" alt="">
+                <div class="carousel-caption">
+                    <h4>广告位招租1</h4>
+                    <p>热门广告位招租1.<br/>联系电话:</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@{'/public/images/ad2.png'}" alt="">
+                <div class="carousel-caption">
+                    <h4>广告位招租2</h4>
+                    <p>热门广告位招租2.<br/>联系电话:</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@{'/public/images/ad3.png'}" alt="">
+                <div class="carousel-caption">
+                    <h4>广告位招租3</h4>
+                    <p>热门广告位招租3.<br/>联系电话:</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
+
+#{set 'moreScripts'}
+<script type="text/javascript">
+$(function(){
+    $("#myCarousel").carousel({interval:3000});
+});
+</script>
+#{/set}

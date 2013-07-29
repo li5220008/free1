@@ -1,0 +1,84 @@
+[ERROR] [2013-07-08 17:46:44]  [play.Logger] -
+
+@6epc7n03b
+Internal Server Error (500) for request POST /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-07-08 17:46:48]  [play.Logger] -
+
+@6epc7n03c
+Internal Server Error (500) for request POST /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-07-08 18:04:33]  [play.Logger] -
+
+@6epc7n03d
+Internal Server Error (500) for request GET /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ERROR] [2013-07-08 18:04:46]  [play.Logger] -
+
+@6epc7n03e
+Internal Server Error (500) for request GET /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more

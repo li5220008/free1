@@ -1,0 +1,13 @@
+h1. qic文档列表
+
+h2. "策略回测api":backtest_api
+
+h2. "部署配制":deploy_conf
+
+h2. "用户导入Excel模板":excel_template
+
+h2. "虚拟产品api":vitualProductApi
+
+h2. "qic服务器安装教程":install_guide
+
+h2. "iquant服务器列表":server_machine

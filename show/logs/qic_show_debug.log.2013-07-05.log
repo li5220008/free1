@@ -1,0 +1,463 @@
+[ INFO] [2013-07-05 09:39:21]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-05 09:39:22]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-05 09:39:22]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-05 09:39:22]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-05 09:39:24]  [play.Logger] -You're running Play! in DEV mode
+[ERROR] [2013-07-05 09:39:24]  [play.Logger] -Could not bind on port 9000
+[ INFO] [2013-07-05 14:46:40]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-05 14:46:41]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-05 14:46:41]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-05 14:46:41]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-05 14:46:42]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-05 14:49:27]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-05 14:49:27]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-05 14:49:27]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-05 14:49:27]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-05 14:49:28]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-05 14:50:54]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-05 14:50:55]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-05 14:50:55]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-05 14:50:55]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-05 14:50:56]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-05 14:50:56]  [play.Logger] -Listening for HTTP on port 9400 (Waiting a first request to start) ...
+[DEBUG] [2013-07-05 14:52:45]  [play.Logger] -ignoring method: public static dto.UserMessagesDto$MessagesStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:45]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerStatusEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: public volatile helpers.CheatSheetHelper$2.compare(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: public volatile job.StrategyYieldSmallPicJob$5.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:46]  [play.Logger] -ignoring method: public static dto.UserInfoDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerTypeEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public volatile dbutils.MapRowProcessor$CaseInsensitiveHashMap.put(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public static models.common.UserInfo$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:49]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:50]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:51]  [play.Logger] -ignoring method: public static dto.UserRegisterDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: public volatile util.HighChartDataType$1.serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) (local vars numbers differs : 3 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: static util.JPAHibernateUtil.access$1(org.hibernate.Query,java.lang.String) (local vars numbers differs : 2 != 0)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: public volatile bussiness.StrategyService$1.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-05 14:52:53]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-05 14:52:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-07-05 14:52:55]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-07-05 14:52:55]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-07-05 14:52:55]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-07-05 14:52:55]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-07-05 14:52:55]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-07-05 14:52:56]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-07-05 14:52:56]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-07-05 14:52:56]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-07-05 14:52:56]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-07-05 14:52:56]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -Application 'show' is now started !
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:52:57]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:53:09]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"a2c00d60dae28b941117e2706c7c8fd07bbb3738ef6953033dc666b901cbf2571bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-05 14:54:57]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:54:58]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:54:58]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='URWsxuclrJyB+uXm9C58dg==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='cNf7qsuxsIlaYMGEWSVpcA==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='WpPTfBw+E2RrFV5CG9dT4Q==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:55:09]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='41o8F/25IgEPrKT4ral0DA==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='qv5Xsw41VP3C9T6Nj7OXtA==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='H4EMiCEPM1K+tvXz7AO+Qg==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 14:55:10]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-05 16:26:28]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-05 16:26:28]  [play.Logger] -sql==
+    select
+        userinfo0_.id as id7_,
+        userinfo0_.account as account7_,
+        userinfo0_.address as address7_,
+        userinfo0_.apply_date as apply4_7_,
+        userinfo0_.capital_account as capital5_7_,
+        userinfo0_.edate as edate7_,
+        userinfo0_.email as email7_,
+        userinfo0_.idcard as idcard7_,
+        userinfo0_.max_login as max9_7_,
+        userinfo0_.name as name7_,
+        userinfo0_.phone as phone7_,
+        userinfo0_.post as post7_,
+        userinfo0_.pwd as pwd7_,
+        userinfo0_.sale_dep as sale17_7_,
+        userinfo0_.sdate as sdate7_,
+        userinfo0_.status as status7_,
+        userinfo0_.utype as utype7_ 
+    from
+        user_info userinfo0_ 
+    where
+        userinfo0_.name='严乔方' 
+        and userinfo0_.account='yanqf' 
+        and userinfo0_.email='weigl@gtadata.com' limit 1
+[ INFO] [2013-07-05 16:26:28]  [play.Logger] -sql==
+    update
+        user_info 
+    set
+        account='yanqf',
+        address=null,
+        apply_date='2013-03-01 00:00:00',
+        capital_account=null,
+        edate='2026-12-02 00:00:00',
+        email='weigl@gtadata.com',
+        idcard=null,
+        max_login=1,
+        name='严乔方',
+        phone='1235666',
+        post=null,
+        pwd='jB8XOgBe7Wjt0ZxaGlVqjg==',
+        sale_dep=1,
+        sdate='2013-06-06 00:00:00',
+        status=10,
+        utype=1 
+    where
+        id=2
+[ INFO] [2013-07-05 16:26:33]  [play.Logger] -sql==commit
+[ INFO] [2013-07-05 16:26:33]  [play.Logger] -sql==SET autocommit=1

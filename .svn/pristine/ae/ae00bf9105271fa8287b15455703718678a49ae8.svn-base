@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'虚拟产品测试' /}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <h4>返回策略列表</h4>
+        #{form @VirtualProductCt.fetchStrategyWithState(), target:'_blank'}
+            status:<input type="text" name="status"><br/>
+            token: <input type="text" name="ntToken"><br/>
+            <input type="submit" value="提交">
+        #{/form}
+        </div>
+
+        <div class="span3">
+            <h4>增加一个交易帐号</h4>
+        #{form @VirtualProductCt.fetchStrategyWithState(), target:'_blank'}
+            status:<input type="text" name="status"><br/>
+            token: <input type="text" name="ntToken"><br/>
+            <input type="submit" value="提交">
+        #{/form}
+        </div>
+
+
+    </div>
+
+</div>
+

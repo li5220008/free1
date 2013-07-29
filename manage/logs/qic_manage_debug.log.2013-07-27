@@ -1,0 +1,28 @@
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.internal.SessionImpl] -Opened session at timestamp: 13748544000
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.ejb.AbstractEntityManagerImpl] -Trying to set a property which is not supported on entity manager level
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.spi.AbstractTransactionImpl] -begin
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.jdbc.internal.LogicalConnectionImpl] -Obtaining JDBC connection
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.jdbc.internal.LogicalConnectionImpl] -Obtained JDBC connection
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction] -initial autocommit status: true
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction] -disabling autocommit
+[ INFO] [2013-07-27 00:00:00]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-27 00:00:00]  [play.Logger] -sql==
+    select
+        id,
+        parameter,
+        runtime,
+        module,
+        status                 
+    from
+        scheduling_task                  
+    where
+        status =1                  
+        and                  runtime<=NOW()
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.spi.AbstractTransactionImpl] -committing
+[ INFO] [2013-07-27 00:00:00]  [play.Logger] -sql==commit
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction] -committed JDBC Connection
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction] -re-enabling autocommit
+[ INFO] [2013-07-27 00:00:00]  [play.Logger] -sql==SET autocommit=1
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.jdbc.internal.LogicalConnectionImpl] -Releasing JDBC connection
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.jdbc.internal.LogicalConnectionImpl] -Released JDBC connection
+[DEBUG] [2013-07-27 00:00:00]  [org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler] -HHH000163: Logical connection releasing its physical connection

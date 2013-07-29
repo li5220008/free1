@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>systemConfig  sql</comment>
+<!--获取用户的功能点id-->
+    <entry key="getUserFunctionIds">
+        <![CDATA[
+SELECT DISTINCT
+    fi.id AS id,
+    fi.pid AS fpid
+FROM
+    user_role ur
+    LEFT JOIN role_function rf
+        ON ur.rid = rf.rid
+    LEFT JOIN function_info fi
+        ON rf.fid = fi.id
+WHERE ur.uid = ?
+    AND fi.name <> ''
+    ]]>
+    </entry>
+
+    <!--获取用户功能点. 加上产品id的限制-->
+    <entry key="fetchUserFunctionInfoWithProduct">
+        <![CDATA[
+SELECT DISTINCT
+	fi.id AS id,
+	fi.pid AS pid,
+    fi.name AS 'name',
+    fi.code AS 'code',
+    fi.action AS 'action'
+FROM
+    user_role ur
+    LEFT JOIN role_function rf
+        ON ur.rid = rf.rid
+    LEFT JOIN function_info fi
+        ON rf.fid = fi.id
+    LEFT JOIN sys_product_info pro
+		ON fi.product_id = pro.id
+WHERE
+	ur.uid = ?
+	AND pro.id = ?
+                ]]>
+    </entry>
+
+    <!--按帐号查找用户信息-->
+    <entry key="findUserInfoByAccount">
+        <![CDATA[
+SELECT
+    id, `name`, account, pwd, phone, email, idcard, capital_account AS capitalAccount, address, post,
+    sdate, edate, apply_date AS applyDate, `status`, utype, utime, max_login as maxLogin
+FROM user_info
+WHERE account = ?
+limit 1
+                ]]>
+    </entry>
+
+    <!--按id查找-->
+    <entry key="findUserInfoById_1">
+        <![CDATA[
+SELECT
+    id, `name`, account, pwd, phone, email, idcard, capital_account AS capitalAccount, address, post,
+    sdate, edate, apply_date AS applyDate, `status`, utype, utime, max_login as maxLogin
+FROM user_info
+WHERE id = ?
+limit 1
+                ]]>
+    </entry>
+
+ <entry key="findUserRole">
+        <![CDATA[
+                    SELECT
+                           ri.id, rid,
+                           ur.uid uid
+                    FROM
+                            user_role  ur
+                    LEFT JOIN
+                            role_info ri
+                    ON
+                            ur.rid=ri.id
+                    WHERE
+                            ur.uid=?
+        ]]>
+    </entry>
+    <!-- 查找角色权限-->
+    <entry key="findFunctionInfoByRoleId">
+        <![CDATA[
+
+                    SELECT
+                          fi.id AS id,
+                          fi.name,
+                          fi.pid,
+                          fi.pid fpid
+                    FROM
+                          role_function rf
+
+                    LEFT JOIN
+                          function_info fi
+                    ON
+                          rf.fid=fi.id
+                    WHERE
+                          rf.rid=?
+        ]]>
+
+    </entry>
+</properties>

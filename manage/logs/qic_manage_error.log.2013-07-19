@@ -1,0 +1,792 @@
+[ERROR] [2013-07-19 09:28:11]  [play.Logger] -
+
+@6f2bk4lf3
+Error during job execution (job.common.ClearCacheJob)
+
+Execution exception (In {module:common}/app/job/common/ClearCacheJob.java around line 24)
+JedisConnectionException occured : Could not get a resource from the pool
+
+play.exceptions.JavaExecutionException: Could not get a resource from the pool
+	at play.jobs.Job.call(Job.java:155)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:98)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:206)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:22)
+	at play.modules.redis.RedisConnectionManager.getRawConnectionInternal(RedisConnectionManager.java:40)
+	at play.modules.redis.Redis.keys(Redis.java:501)
+	at job.common.ClearCacheJob.clearPrevilegeFromRedis(ClearCacheJob.java:24)
+	at job.common.ClearCacheJob.doJob(ClearCacheJob.java:19)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 7 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:124)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1657)
+	at redis.clients.jedis.JedisPool$JedisFactory.makeObject(JedisPool.java:63)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:1158)
+	at redis.clients.util.Pool.getResource(Pool.java:20)
+	... 13 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at redis.clients.jedis.Connection.connect(Connection.java:119)
+	... 18 more
+[ERROR] [2013-07-19 09:28:19]  [play.Logger] -
+
+@6f2bk4lf4
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:427)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:418)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:380)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:108)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:78)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:313)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:41)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:574)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:148)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:104)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:78)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:313)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:41)
+	... 3 more
+[ERROR] [2013-07-19 14:04:58]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Execution exception 
+        </h1>
+        
+        <p>
+            <strong>RuntimeException</strong> occured : Cannot parse JSON (check logs)
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java (around line 31)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">27:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">28:</span>
+                    <pre>&nbsp;    private JsonElement doGet(String url, String... params) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">29:</span>
+                    <pre>&nbsp;        String realUrl = String.format(url, params);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">30:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get请求url：%s&quot;, realUrl);</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">31:</span>
+                    <pre>&nbsp;        JsonElement jsonElement = WS.url(realUrl).get().getJson();</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">32:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get响应数据:：%s&quot;, jsonElement);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">33:</span>
+                    <pre>&nbsp;        return jsonElement;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">34:</span>
+                    <pre>&nbsp;    }</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">35:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">36:</span>
+                    <pre>&nbsp;    public JsonElement doGetWithMap(String url, Map&lt;String, Object&gt; param) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">37:</span>
+                    <pre>&nbsp;        throw new UnsupportedOperationException(&quot;暂不支持&quot;);</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6f2d4dgbi</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-19 14:04:58]  [play.Logger] -
+
+@6f2bk4lf5
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-19 14:06:42]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Execution exception 
+        </h1>
+        
+        <p>
+            <strong>RuntimeException</strong> occured : Cannot parse JSON (check logs)
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java (around line 31)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">27:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">28:</span>
+                    <pre>&nbsp;    private JsonElement doGet(String url, String... params) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">29:</span>
+                    <pre>&nbsp;        String realUrl = String.format(url, params);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">30:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get请求url：%s&quot;, realUrl);</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">31:</span>
+                    <pre>&nbsp;        JsonElement jsonElement = WS.url(realUrl).get().getJson();</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">32:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get响应数据:：%s&quot;, jsonElement);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">33:</span>
+                    <pre>&nbsp;        return jsonElement;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">34:</span>
+                    <pre>&nbsp;    }</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">35:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">36:</span>
+                    <pre>&nbsp;    public JsonElement doGetWithMap(String url, Map&lt;String, Object&gt; param) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">37:</span>
+                    <pre>&nbsp;        throw new UnsupportedOperationException(&quot;暂不支持&quot;);</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6f2d4jei0</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-19 14:06:42]  [play.Logger] -
+
+@6f2bk4lf6
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-19 14:07:10]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Execution exception 
+        </h1>
+        
+        <p>
+            <strong>RuntimeException</strong> occured : Cannot parse JSON (check logs)
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/business/DefaultRemoteRequestServiceSupport.java (around line 31)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">27:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">28:</span>
+                    <pre>&nbsp;    private JsonElement doGet(String url, String... params) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">29:</span>
+                    <pre>&nbsp;        String realUrl = String.format(url, params);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">30:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get请求url：%s&quot;, realUrl);</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">31:</span>
+                    <pre>&nbsp;        JsonElement jsonElement = WS.url(realUrl).get().getJson();</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">32:</span>
+                    <pre>&nbsp;        Logger.debug(&quot;get响应数据:：%s&quot;, jsonElement);</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">33:</span>
+                    <pre>&nbsp;        return jsonElement;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">34:</span>
+                    <pre>&nbsp;    }</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">35:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">36:</span>
+                    <pre>&nbsp;    public JsonElement doGetWithMap(String url, Map&lt;String, Object&gt; param) {</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">37:</span>
+                    <pre>&nbsp;        throw new UnsupportedOperationException(&quot;暂不支持&quot;);</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6f2d4jei1</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-19 14:07:10]  [play.Logger] -
+
+@6f2bk4lf7
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more

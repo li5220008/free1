@@ -1,0 +1,73 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+
+#登陆获取token, 参数密码是md5加密后的
+GET     /api/login                                                 SSOExportWithoutCheck.login
+
+#登陆获取token, 参数密码是原文
+GET     /api/loginWithoutCryp                                      SSOExportWithoutCheck.loginWithoutCryp
+
+#检查token是否有效
+GET     /api/checkLoginToken                                       SSOExportWithoutCheck.checkLoginToken
+
+#获取本产品功能列表
+GET     /api/fetchFunction                                         SSOExportWithCheck.fetchFuction
+
+#获取其它产品功能列表
+GET     /api/fetchOtherPFunction/p/{<[0-9]+>pid}                   SSOExportWithCheck.fetchOtherProductFunction
+
+#自选股组
+POST     /api/custSecGroup                                         CustomerInfos.addCustSecGroup
+GET      /api/custSecGroup/existName                               CustomerInfos.existCustSecGroupName
+POST     /api/custSecGroup/delByName                               CustomerInfos.delCustSecGroupByName
+DELETE   /api/custSecGroup/{<[0-9]+>id}                            CustomerInfos.delCustSecGroupById
+GET      /api/custSecGroup/latest                                  CustomerInfos.fetchCustSecGroupLatest
+GET      /api/custSecGroup/history                                 CustomerInfos.fetchCustSecGroupByNameAll
+#按自选股组名称查找最新的自选股明细
+GET      /api/custSecGroup/byname/latestDetail                     CustomerInfos.fetchCustSecGroupByNameLatestDetail
+
+#自选股明细
+POST     /api/custSecList/g/{<[0-9]+>gid}                          CustomerInfos.addCustSecListByGid
+POST     /api/custSecList/g/{<[0-9]+>gid}/batchAddOrEdit           CustomerInfos.batchAddOrEditCustSecListByGid
+DELETE   /api/custSecList/{<[0-9]+>id}                             CustomerInfos.delCustSecListById
+GET      /api/custSecList/g/{<[0-9]+>gid}                          CustomerInfos.fetchCustSecListByGid
+
+#自定义指标
+POST     /api/custIndex                                            CustomerInfos.addCustIndex
+DELETE   /api/custIndex/{<[0-9]+>id}                               CustomerInfos.delCustIndex
+PUT      /api/custIndex/{<[0-9]+>id}                               CustomerInfos.editCustIndex
+GET      /api/custIndex                                            CustomerInfos.fetchCustIndex
+#返回自定义指标内容
+GET      /api/custIndex/{<[0-9]+>id}/content                       CustomerInfos.fetchCustIndexContentByid
+
+#自定义模板
+POST     /api/custTemplate                                         CustomerInfos.addCustTemplate
+DELETE   /api/custTemplate/{<[0-9]+>id}                            CustomerInfos.delCustTemplate
+PUT      /api/custTemplate/{<[0-9]+>id}                            CustomerInfos.editCustTemplate
+GET      /api/custTemplate/{<[0-9]+>category}                      CustomerInfos.fetchCustTemplateListByCategory
+#返回自定义模板内容
+GET      /api/custTemplate/{<[0-9]+>id}/content                    CustomerInfos.fetchCustTemplateContentByid
+GET      /api/custTemplate/existName                               CustomerInfos.custTemplateExistName
+
+
+#虚拟产品
+
+GET     /api/fetchStrategyWithState/{state}                        VirtualProductCt.fetchStrategyWithState
+
+
+
+#退出
+GET     /api/logout                                                SSOExportWithCheck.loginOut
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

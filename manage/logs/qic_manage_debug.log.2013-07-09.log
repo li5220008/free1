@@ -1,0 +1,1183 @@
+[ INFO] [2013-07-09 09:38:07]  [play.Logger] -Starting D:\www\iQuant\manage
+[ERROR] [2013-07-09 09:38:08]  [play.Logger] -Module redis will not be loaded because D:\work\playframework\play1\modules\redis-0.3 does not exist
+[ INFO] [2013-07-09 09:38:08]  [play.Logger] -Module excel is available (D:\www\iQuant\manage\modules\excel-1.2.3)
+[ INFO] [2013-07-09 09:38:08]  [play.Logger] -Module common is available (D:\www\iQuant\manage\..\common)
+[ INFO] [2013-07-09 09:38:08]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\manage\..\qicdoc)
+[ WARN] [2013-07-09 09:38:09]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-09 09:38:09]  [play.Logger] -Listening for HTTP on port 9500 (Waiting a first request to start) ...
+[ERROR] [2013-07-09 09:38:21]  [play.Logger] -
+
+@6eph2lc0b
+Internal Server Error (500) for request GET /
+
+Compilation error (In {module:common}/app/business/UserInfoBaseService.java around line 15)
+The file {module:common}/app/business/UserInfoBaseService.java could not be compiled. Error raised is : play.modules.redis.Redis cannot be resolved
+
+play.exceptions.CompilationException: play.modules.redis.Redis cannot be resolved
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:424)
+	at play.Play.start(Play.java:523)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:197)
+	at Invocation.HTTP Request(Play!)
+[ INFO] [2013-07-09 09:39:47]  [play.Logger] -Starting D:\www\iQuant\manage
+[ INFO] [2013-07-09 09:39:48]  [play.Logger] -Module redis is available (D:\www\iQuant\manage\modules\redis-0.3)
+[ INFO] [2013-07-09 09:39:48]  [play.Logger] -Module excel is available (D:\www\iQuant\manage\modules\excel-1.2.3)
+[ INFO] [2013-07-09 09:39:48]  [play.Logger] -Module common is available (D:\www\iQuant\manage\..\common)
+[ INFO] [2013-07-09 09:39:48]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\manage\..\qicdoc)
+[ WARN] [2013-07-09 09:39:48]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-09 09:39:48]  [play.Logger] -Listening for HTTP on port 9500 (Waiting a first request to start) ...
+[DEBUG] [2013-07-09 09:39:55]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:56]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerStatusEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:56]  [play.Logger] -ignoring method: public volatile helpers.CheatSheetHelper$2.compare(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-07-09 09:39:56]  [play.Logger] -ignoring method: public static dto.BackTestServerDto$ServerStatusEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:56]  [play.Logger] -ignoring method: public volatile controllers.ExcelControllerHelper$1.invoke(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-09 09:39:57]  [play.Logger] -ignoring method: public static dto.UserInfoDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:57]  [play.Logger] -ignoring method: public static dto.BackTestServerDto$ServerTypeEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerTypeEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public volatile dbutils.MapRowProcessor$CaseInsensitiveHashMap.put(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public static models.common.UserInfo$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public volatile controllers.BackTestServers$2.doJobWithResult() (local vars numbers differs : 0 != -1)
+[DEBUG] [2013-07-09 09:39:59]  [play.Logger] -ignoring method: public volatile controllers.BackTestServers$1.doJobWithResult() (local vars numbers differs : 0 != -1)
+[DEBUG] [2013-07-09 09:40:00]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:40:00]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:40:01]  [play.Logger] -ignoring method: public volatile util.HighChartDataType$1.serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) (local vars numbers differs : 3 != -1)
+[DEBUG] [2013-07-09 09:40:02]  [play.Logger] -ignoring method: static util.JPAHibernateUtil.access$1(org.hibernate.Query,java.lang.String) (local vars numbers differs : 2 != 0)
+[DEBUG] [2013-07-09 09:40:02]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-09 09:40:02]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-07-09 09:40:03]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-07-09 09:40:03]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci&zeroDateTimeBehavior=convertToNull&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:04]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -Connected to jdbc:mysql://localhost/qsm?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci&zeroDateTimeBehavior=convertToNull&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:05]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-09 09:40:05]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-07-09 09:40:05]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-07-09 09:40:05]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-07-09 09:40:05]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-07-09 09:40:06]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-07-09 09:40:06]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-07-09 09:40:06]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-07-09 09:40:06]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-07-09 09:40:06]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -Application 'manage' is now started !
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:40:07]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:40:43]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"2972aff970b2e95f2d9005a0a5cfb5a4e0da0a144e5fb09f1488d3191213aa7c1bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=1
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -miss 角色-->权限
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`  
+        WHERE
+            ui.`status`=2 ) distTable
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:40:55]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:40:58]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS,
+            GROUP_CONCAT(ri.`name`) AS roleName,
+            ui.`sdate` AS startDate,
+            ui.`edate` AS endDate 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`      
+        left JOIN
+            user_role ur 
+                ON ur.`uid`=ui.`id`     
+        left JOIN
+            role_info ri 
+                ON ri.`id` = ur.`rid`     
+        where
+            ui.`status` NOT IN(
+                -100,2
+            )  
+            AND ui.`edate`>NOW()  
+        GROUP BY
+            id  ) distTable
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==
+    SELECT
+        ui.`id` AS id,
+        ui.`account` AS account,
+        ui.`name` AS NAME,
+        ui.`idcard` AS idCard,
+        ui.`phone` AS phone,
+        sd.`name` AS saleName,
+        ui.`capital_account` AS capitalAccount,
+        ui.`apply_date` AS applyDate,
+        ui.`status` AS STATUS,
+        GROUP_CONCAT(ri.`name`) AS roleName,
+        ui.`sdate` AS startDate,
+        ui.`edate` AS endDate 
+    FROM
+        user_info ui   
+    LEFT JOIN
+        sale_department sd     
+            ON ui.`sale_dep` = sd.`id`      
+    left JOIN
+        user_role ur 
+            ON ur.`uid`=ui.`id`     
+    left JOIN
+        role_info ri 
+            ON ri.`id` = ur.`rid`     
+    where
+        ui.`status` NOT IN(
+            -100,2
+        )  
+        AND ui.`edate`>NOW()  
+    GROUP BY
+        id  limit 0,
+        20
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:41:06]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS,
+            GROUP_CONCAT(ri.`name`) AS roleName,
+            ui.`edate` AS endDate 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`      
+        left JOIN
+            user_role ur 
+                ON ur.`uid`=ui.`id`     
+        left JOIN
+            role_info ri 
+                ON ri.`id` = ur.`rid`     
+        where
+            ui.`status`=10 
+            AND ui.`edate`<NOW()  
+        GROUP BY
+            id  ) distTable
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:41:09]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:41:15]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:15]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:15]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:15]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:18]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:18]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:41:21]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:41:28]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:41:28]  [play.Logger] -sql==
+    SELECT
+        id,
+        ip,
+        status,
+        server_type type,
+        enginetype_id  enginetypeId          
+    FROM
+        strategy_server bsl
+[ INFO] [2013-07-09 09:41:28]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:41:28]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:41:37]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"fd7e78d27186cad242b4d9fc11999f9bbf9b8d1b6672cc5c3cfc78292947649d1bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-09 09:45:13]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:13]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:13]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:13]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:16]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:16]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`  
+        WHERE
+            ui.`status`=2 ) distTable
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:45:19]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS,
+            GROUP_CONCAT(ri.`name`) AS roleName,
+            ui.`sdate` AS startDate,
+            ui.`edate` AS endDate 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`      
+        left JOIN
+            user_role ur 
+                ON ur.`uid`=ui.`id`     
+        left JOIN
+            role_info ri 
+                ON ri.`id` = ur.`rid`     
+        where
+            ui.`status` NOT IN(
+                -100,2
+            )  
+            AND ui.`edate`>NOW()  
+        GROUP BY
+            id  ) distTable
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==
+    SELECT
+        ui.`id` AS id,
+        ui.`account` AS account,
+        ui.`name` AS NAME,
+        ui.`idcard` AS idCard,
+        ui.`phone` AS phone,
+        sd.`name` AS saleName,
+        ui.`capital_account` AS capitalAccount,
+        ui.`apply_date` AS applyDate,
+        ui.`status` AS STATUS,
+        GROUP_CONCAT(ri.`name`) AS roleName,
+        ui.`sdate` AS startDate,
+        ui.`edate` AS endDate 
+    FROM
+        user_info ui   
+    LEFT JOIN
+        sale_department sd     
+            ON ui.`sale_dep` = sd.`id`      
+    left JOIN
+        user_role ur 
+            ON ur.`uid`=ui.`id`     
+    left JOIN
+        role_info ri 
+            ON ri.`id` = ur.`rid`     
+    where
+        ui.`status` NOT IN(
+            -100,2
+        )  
+        AND ui.`edate`>NOW()  
+    GROUP BY
+        id  limit 0,
+        20
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:45:21]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS,
+            GROUP_CONCAT(ri.`name`) AS roleName,
+            ui.`edate` AS endDate 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`      
+        left JOIN
+            user_role ur 
+                ON ur.`uid`=ui.`id`     
+        left JOIN
+            role_info ri 
+                ON ri.`id` = ur.`rid`     
+        where
+            ui.`status`=10 
+            AND ui.`edate`<NOW()  
+        GROUP BY
+            id  ) distTable
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:45:22]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==
+    SELECT
+        name,
+        id,
+        action,
+        code,
+        pid                     
+    FROM
+        function_info                     
+    WHERE
+        product_id=1
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==
+    SELECT
+        name,
+        id,
+        action,
+        code,
+        pid                     
+    FROM
+        function_info                     
+    WHERE
+        product_id=1
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:45:25]  [play.Logger] -sql==
+    SELECT
+        id,
+        name,
+        desp         
+    FROM
+        role_info         
+    WHERE
+        id = 1
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:45:26]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:45:46]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:46]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:45:46]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:45:46]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:13]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"3600f8c04d8a8cd4d5b6d2b4415b817d2a049a8a94eb21460439c0536b658d981bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=9
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:51:14]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:51:18]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:23]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:51:23]  [play.Logger] -sql==
+    SELECT
+        id,
+        ip,
+        status,
+        server_type type,
+        enginetype_id  enginetypeId          
+    FROM
+        strategy_server bsl
+[ INFO] [2013-07-09 09:51:23]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:51:23]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:51:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:28]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:28]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:50]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"3c0a3368b5c03013cd96629f97a7002e678927e06d09f9c7083998b23c2965521bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            ui.`id` AS id,
+            ui.`account` AS account,
+            ui.`name` AS NAME,
+            ui.`idcard` AS idCard,
+            ui.`phone` AS phone,
+            sd.`name` AS saleName,
+            ui.`capital_account` AS capitalAccount,
+            ui.`apply_date` AS applyDate,
+            ui.`status` AS STATUS 
+        FROM
+            user_info ui   
+        LEFT JOIN
+            sale_department sd     
+                ON ui.`sale_dep` = sd.`id`  
+        WHERE
+            ui.`status`=2 ) distTable
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==
+    SELECT
+        id,
+        name              
+    FROM
+        sale_department
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==
+    SELECT
+        id,
+        name                 
+    FROM
+        role_info
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:51:53]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:51:55]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:55]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:55]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:55]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:51:58]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:51:58]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:52:00]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:52:04]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 09:52:04]  [play.Logger] -sql==
+    SELECT
+        id,
+        ip,
+        status,
+        server_type type,
+        enginetype_id  enginetypeId          
+    FROM
+        strategy_server bsl
+[ INFO] [2013-07-09 09:52:04]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 09:52:04]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 09:58:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:58:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 09:59:17]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 09:59:17]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 10:10:32]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 10:10:32]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 10:10:32]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 10:10:32]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 10:10:32]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 10:10:33]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 10:10:33]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 10:16:53]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 10:16:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 10:16:59]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 10:16:59]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 10:17:38]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 10:17:38]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 10:17:38]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 10:17:38]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 10:17:38]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=1
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -miss 角色-->权限
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 14:45:50]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`cdate`,
+            b.`name`,
+            a.`func`,
+            a.`content`,
+            a.`type`         
+        FROM
+            qic_db.`operation_log_info` a           
+        INNER JOIN
+            qic_db.`user_info` b             
+                ON a.`uid` = b.`id` ) distTable
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -sql==
+    SELECT
+        a.`cdate`,
+        b.`name`,
+        a.`func`,
+        a.`content`,
+        a.`type`         
+    FROM
+        qic_db.`operation_log_info` a           
+    INNER JOIN
+        qic_db.`user_info` b             
+            ON a.`uid` = b.`id`
+    order by
+        cdate desc limit 0,
+        20
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 14:45:55]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=1
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -miss 角色-->权限
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -sql==commit
+[ INFO] [2013-07-09 15:47:21]  [play.Logger] -sql==SET autocommit=1

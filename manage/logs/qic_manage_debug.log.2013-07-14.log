@@ -1,0 +1,15 @@
+[ INFO] [2013-07-14 00:00:01]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-14 00:00:01]  [play.Logger] -sql==
+    select
+        id,
+        parameter,
+        runtime,
+        module,
+        status                 
+    from
+        scheduling_task                  
+    where
+        status =1                  
+        and                  runtime<=NOW()
+[ INFO] [2013-07-14 00:00:01]  [play.Logger] -sql==commit
+[ INFO] [2013-07-14 00:00:01]  [play.Logger] -sql==SET autocommit=1

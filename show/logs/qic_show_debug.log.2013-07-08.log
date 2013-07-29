@@ -1,0 +1,2559 @@
+[ INFO] [2013-07-08 09:10:31]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-08 09:10:32]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-08 09:10:32]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-08 09:10:32]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-08 09:10:36]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-08 09:10:37]  [play.Logger] -Listening for HTTP on port 9400 (Waiting a first request to start) ...
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-07-08 09:23:45]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-07-08 09:23:46]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-07-08 09:23:47]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-07-08 09:23:47]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-07-08 09:23:47]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -Application 'show' is now started !
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:23:48]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:23:59]  [play.Logger] -登陆处理返回json对象:{"message":"401__密码错误","success":false}
+[ INFO] [2013-07-08 09:24:10]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"5b6936b1fa86f50acfbd0eebb725c7a0b77a92517a74b8f31fa01ca609afb67c1bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=1
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -miss 角色-->权限
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            sb.id AS id,
+            sb.st_uuid AS 'uuid',
+            sb.name AS sname,
+            sb.provider AS provider,
+            /*提供者*/     sb.trade_type AS stype,
+            /*交易类型*/     sb.trade_variety AS tradeVariety,
+            /*交易品种*/     sb.collect_count AS collectCount,
+            /*收藏总数*/     sb.up_time AS upTime,
+            /*上架时间*/     sb.discuss_count AS discussCount,
+            /*评论总数*/     sb.enginetype_id AS enginetypeId,
+            /*引擎类型*/     sb.desp AS desp,
+            /*简介*/     sb.order_count AS orderCount,
+            /*总订阅人数*/      IF(         sb.discuss_count = 0,
+            0,
+            sb.discuss_total / sb.discuss_count     ) AS starLevel,
+            /*星级*/      IF(         sb.enginetype_id = 1,
+            qicore.yield_of_year,
+            qia.average_simple_rate_of_return * 252     ) AS yield,
+            /*年化收益率*/      IF(         sb.enginetype_id = 1,
+            qicore.profit_ratio,
+            qia.hit_rate     ) AS profitRatio,
+            /*胜率*/      IF(         sb.enginetype_id = 1,
+            qicore.sharpe_index,
+            qia.sharp_ratio     ) AS sharpe /*夏普比率*/  
+        FROM
+            qic_db.strategy_baseinfo sb     
+        LEFT JOIN
+            (
+                SELECT
+                    a.*     
+                FROM
+                    qic_db.strategy_performance_qicore a ,
+                    (         SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time         
+                    FROM
+                        qic_db.strategy_performance_qicore b         
+                    GROUP BY
+                        b.strategy_id     ) spe     
+                WHERE
+                    a.strategy_id = spe.strategy_id 
+                    AND a.update_time = spe.update_time     
+                ) AS qicore         
+                    ON sb.id = qicore.strategy_id     
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*     
+                    FROM
+                        qic_db.strategy_performance_qia a ,
+                        (         SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time         
+                        FROM
+                            qic_db.strategy_performance_qia b         
+                        GROUP BY
+                            b.strategy_id     ) bm     
+                    WHERE
+                        a.strategy_id = bm.strategy_id 
+                        AND a.update_time = bm.update_time     
+                    ) AS qia         
+                        ON sb.id = qia.strategy_id 
+                WHERE
+                    sb.status IN (
+                        4, 7
+                    ) 
+                    AND sb.up_time < DATE_ADD(NOW(), INTERVAL - 3 DAY)  
+                ORDER BY
+                    yield DESC  
+            ) distTable 
+        where
+            1=1
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==
+    SELECT
+        sb.id AS id,
+        sb.st_uuid AS 'uuid',
+        sb.name AS sname,
+        sb.provider AS provider,
+        /*提供者*/     sb.trade_type AS stype,
+        /*交易类型*/     sb.trade_variety AS tradeVariety,
+        /*交易品种*/     sb.collect_count AS collectCount,
+        /*收藏总数*/     sb.up_time AS upTime,
+        /*上架时间*/     sb.discuss_count AS discussCount,
+        /*评论总数*/     sb.enginetype_id AS enginetypeId,
+        /*引擎类型*/     sb.desp AS desp,
+        /*简介*/     sb.order_count AS orderCount,
+        /*总订阅人数*/      IF(         sb.discuss_count = 0,
+        0,
+        sb.discuss_total / sb.discuss_count     ) AS starLevel,
+        /*星级*/      IF(         sb.enginetype_id = 1,
+        qicore.yield_of_year,
+        qia.average_simple_rate_of_return * 252     ) AS yield,
+        /*年化收益率*/      IF(         sb.enginetype_id = 1,
+        qicore.profit_ratio,
+        qia.hit_rate     ) AS profitRatio,
+        /*胜率*/      IF(         sb.enginetype_id = 1,
+        qicore.sharpe_index,
+        qia.sharp_ratio     ) AS sharpe /*夏普比率*/  
+    FROM
+        qic_db.strategy_baseinfo sb     
+    LEFT JOIN
+        (
+            SELECT
+                a.*     
+            FROM
+                qic_db.strategy_performance_qicore a ,
+                (         SELECT
+                    b.strategy_id,
+                    MAX(b.update_time) AS update_time         
+                FROM
+                    qic_db.strategy_performance_qicore b         
+                GROUP BY
+                    b.strategy_id     ) spe     
+            WHERE
+                a.strategy_id = spe.strategy_id 
+                AND a.update_time = spe.update_time     
+            ) AS qicore         
+                ON sb.id = qicore.strategy_id     
+        LEFT JOIN
+            (
+                SELECT
+                    a.*     
+                FROM
+                    qic_db.strategy_performance_qia a ,
+                    (         SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time         
+                    FROM
+                        qic_db.strategy_performance_qia b         
+                    GROUP BY
+                        b.strategy_id     ) bm     
+                WHERE
+                    a.strategy_id = bm.strategy_id 
+                    AND a.update_time = bm.update_time     
+                ) AS qia         
+                    ON sb.id = qia.strategy_id 
+            WHERE
+                sb.status IN (
+                    4, 7
+                ) 
+                AND sb.up_time < DATE_ADD(NOW(), INTERVAL - 3 DAY)  
+            ORDER BY
+                yield DESC  limit 0,
+                20
+[DEBUG] [2013-07-08 09:24:12]  [play.Logger] -SELECT uid AS uid,stid AS stid FROM qic_db.user_strategy_collect WHERE uid=1 AND stid in (96,13,26,15,19,56,62,55,66,16,12,28,44,10)
+[ INFO] [2013-07-08 09:24:12]  [play.Logger] -sql==
+    SELECT
+        uid AS uid,
+        stid AS stid 
+    FROM
+        qic_db.user_strategy_collect 
+    WHERE
+        uid=1 
+        AND stid in (
+            96,13,26,15,19,56,62,55,66,16,12,28,44,10
+        )
+[ INFO] [2013-07-08 09:24:13]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=1 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:14]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:15]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:15]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            strate.*,
+            1  
+        FROM
+            (  SELECT
+                sb.id AS id,
+                sb.st_uuid AS 'uuid',
+                sb.name AS sname,
+                sb.provider AS provider,
+                /*提供者*/   sb.trade_type AS stype,
+                /*交易类型*/   sb.trade_variety AS tradeVariety,
+                /*交易品种*/   sb.collect_count AS collectCount,
+                /*收藏总数*/   sb.up_time AS upTime,
+                /*上架时间*/   sb.discuss_count AS discussCount,
+                /*评论总数*/   sb.enginetype_id AS enginetypeId,
+                /*引擎类型*/   sb.desp AS desp,
+                /*简介*/   sb.order_count AS orderCount,
+                /*总订阅人数*/    IF(    sb.discuss_count = 0,
+                0,
+                sb.discuss_total / sb.discuss_count   ) AS starLevel,
+                /*星级*/    IF(    sb.enginetype_id = 1,
+                qicore.yield_of_year,
+                qia.average_simple_rate_of_return * 252   ) AS yield,
+                /*年化收益率*/    IF(    sb.enginetype_id = 1,
+                qicore.profit_ratio,
+                qia.hit_rate   ) AS profitRatio,
+                /*胜率*/    IF(    sb.enginetype_id = 1,
+                qicore.sharpe_index,
+                qia.sharp_ratio   ) AS sharpe /*夏普比率*/   
+            FROM
+                qic_db.strategy_baseinfo sb   
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*             
+                    FROM
+                        qic_db.strategy_performance_qicore a ,
+                        (                 SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time                 
+                        FROM
+                            qic_db.strategy_performance_qicore b                 
+                        GROUP BY
+                            b.strategy_id             ) spe             
+                    WHERE
+                        a.strategy_id = spe.strategy_id 
+                        AND a.update_time = spe.update_time             
+                    ) AS qicore    
+                        ON sb.id = qicore.strategy_id   
+                LEFT JOIN
+                    (
+                        SELECT
+                            a.*   
+                        FROM
+                            qic_db.strategy_performance_qia a ,
+                            (    SELECT
+                                b.strategy_id,
+                                MAX(b.update_time) AS update_time    
+                            FROM
+                                qic_db.strategy_performance_qia b    
+                            GROUP BY
+                                b.strategy_id   ) bm   
+                        WHERE
+                            a.strategy_id = bm.strategy_id 
+                            AND a.update_time = bm.update_time   
+                        ) AS qia    
+                            ON sb.id = qia.strategy_id  
+                    WHERE
+                        sb.status IN (
+                            4, 7
+                        )  
+                ) AS strate 
+            INNER JOIN
+                qic_db.user_strategy_collect ust 
+                    ON strate.id = ust.stid  
+            WHERE
+                ust.uid = 1 
+            ORDER BY
+                yield DESC  ) distTable
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -sql==
+    SELECT
+        strate.*,
+        1  
+    FROM
+        (  SELECT
+            sb.id AS id,
+            sb.st_uuid AS 'uuid',
+            sb.name AS sname,
+            sb.provider AS provider,
+            /*提供者*/   sb.trade_type AS stype,
+            /*交易类型*/   sb.trade_variety AS tradeVariety,
+            /*交易品种*/   sb.collect_count AS collectCount,
+            /*收藏总数*/   sb.up_time AS upTime,
+            /*上架时间*/   sb.discuss_count AS discussCount,
+            /*评论总数*/   sb.enginetype_id AS enginetypeId,
+            /*引擎类型*/   sb.desp AS desp,
+            /*简介*/   sb.order_count AS orderCount,
+            /*总订阅人数*/    IF(    sb.discuss_count = 0,
+            0,
+            sb.discuss_total / sb.discuss_count   ) AS starLevel,
+            /*星级*/    IF(    sb.enginetype_id = 1,
+            qicore.yield_of_year,
+            qia.average_simple_rate_of_return * 252   ) AS yield,
+            /*年化收益率*/    IF(    sb.enginetype_id = 1,
+            qicore.profit_ratio,
+            qia.hit_rate   ) AS profitRatio,
+            /*胜率*/    IF(    sb.enginetype_id = 1,
+            qicore.sharpe_index,
+            qia.sharp_ratio   ) AS sharpe /*夏普比率*/   
+        FROM
+            qic_db.strategy_baseinfo sb   
+        LEFT JOIN
+            (
+                SELECT
+                    a.*             
+                FROM
+                    qic_db.strategy_performance_qicore a ,
+                    (                 SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time                 
+                    FROM
+                        qic_db.strategy_performance_qicore b                 
+                    GROUP BY
+                        b.strategy_id             ) spe             
+                WHERE
+                    a.strategy_id = spe.strategy_id 
+                    AND a.update_time = spe.update_time             
+                ) AS qicore    
+                    ON sb.id = qicore.strategy_id   
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*   
+                    FROM
+                        qic_db.strategy_performance_qia a ,
+                        (    SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time    
+                        FROM
+                            qic_db.strategy_performance_qia b    
+                        GROUP BY
+                            b.strategy_id   ) bm   
+                    WHERE
+                        a.strategy_id = bm.strategy_id 
+                        AND a.update_time = bm.update_time   
+                    ) AS qia    
+                        ON sb.id = qia.strategy_id  
+                WHERE
+                    sb.status IN (
+                        4, 7
+                    )  
+            ) AS strate 
+        INNER JOIN
+            qic_db.user_strategy_collect ust 
+                ON strate.id = ust.stid  
+        WHERE
+            ust.uid = 1 
+        ORDER BY
+            yield DESC  limit 0,
+            20
+[DEBUG] [2013-07-08 09:24:20]  [play.Logger] -SELECT uid AS uid,stid AS stid FROM qic_db.user_strategy_collect WHERE uid=1 AND stid in (15,19,55,10)
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -sql==
+    SELECT
+        uid AS uid,
+        stid AS stid 
+    FROM
+        qic_db.user_strategy_collect 
+    WHERE
+        uid=1 
+        AND stid in (
+            15,19,55,10
+        )
+[ INFO] [2013-07-08 09:24:20]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=1 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:21]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            strate.*,
+            1  
+        FROM
+            (  SELECT
+                sb.id AS id,
+                sb.st_uuid AS 'uuid',
+                sb.name AS sname,
+                sb.provider AS provider,
+                /*提供者*/   sb.trade_type AS stype,
+                /*交易类型*/   sb.trade_variety AS tradeVariety,
+                /*交易品种*/   sb.collect_count AS collectCount,
+                /*收藏总数*/   sb.up_time AS upTime,
+                /*上架时间*/   sb.discuss_count AS discussCount,
+                /*评论总数*/   sb.enginetype_id AS enginetypeId,
+                /*引擎类型*/   sb.desp AS desp,
+                /*简介*/   sb.order_count AS orderCount,
+                /*总订阅人数*/    IF(    sb.discuss_count = 0,
+                0,
+                sb.discuss_total / sb.discuss_count   ) AS starLevel,
+                /*星级*/    IF(    sb.enginetype_id = 1,
+                qicore.yield_of_year,
+                qia.average_simple_rate_of_return * 252   ) AS yield,
+                /*年化收益率*/    IF(    sb.enginetype_id = 1,
+                qicore.profit_ratio,
+                qia.hit_rate   ) AS profitRatio,
+                /*胜率*/    IF(    sb.enginetype_id = 1,
+                qicore.sharpe_index,
+                qia.sharp_ratio   ) AS sharpe /*夏普比率*/   
+            FROM
+                qic_db.strategy_baseinfo sb   
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*             
+                    FROM
+                        qic_db.strategy_performance_qicore a ,
+                        (                 SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time                 
+                        FROM
+                            qic_db.strategy_performance_qicore b                 
+                        GROUP BY
+                            b.strategy_id             ) spe             
+                    WHERE
+                        a.strategy_id = spe.strategy_id 
+                        AND a.update_time = spe.update_time             
+                    ) AS qicore    
+                        ON sb.id = qicore.strategy_id   
+                LEFT JOIN
+                    (
+                        SELECT
+                            a.*   
+                        FROM
+                            qic_db.strategy_performance_qia a ,
+                            (    SELECT
+                                b.strategy_id,
+                                MAX(b.update_time) AS update_time    
+                            FROM
+                                qic_db.strategy_performance_qia b    
+                            GROUP BY
+                                b.strategy_id   ) bm   
+                        WHERE
+                            a.strategy_id = bm.strategy_id 
+                            AND a.update_time = bm.update_time   
+                        ) AS qia    
+                            ON sb.id = qia.strategy_id  
+                    WHERE
+                        sb.status IN (
+                            4, 7
+                        )  
+                ) AS strate 
+            INNER JOIN
+                qic_db.user_strategy_order ust 
+                    ON strate.id = ust.stid  
+            WHERE
+                ust.uid = 1 
+            ORDER BY
+                yield DESC  ) distTable
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -sql==
+    SELECT
+        strate.*,
+        1  
+    FROM
+        (  SELECT
+            sb.id AS id,
+            sb.st_uuid AS 'uuid',
+            sb.name AS sname,
+            sb.provider AS provider,
+            /*提供者*/   sb.trade_type AS stype,
+            /*交易类型*/   sb.trade_variety AS tradeVariety,
+            /*交易品种*/   sb.collect_count AS collectCount,
+            /*收藏总数*/   sb.up_time AS upTime,
+            /*上架时间*/   sb.discuss_count AS discussCount,
+            /*评论总数*/   sb.enginetype_id AS enginetypeId,
+            /*引擎类型*/   sb.desp AS desp,
+            /*简介*/   sb.order_count AS orderCount,
+            /*总订阅人数*/    IF(    sb.discuss_count = 0,
+            0,
+            sb.discuss_total / sb.discuss_count   ) AS starLevel,
+            /*星级*/    IF(    sb.enginetype_id = 1,
+            qicore.yield_of_year,
+            qia.average_simple_rate_of_return * 252   ) AS yield,
+            /*年化收益率*/    IF(    sb.enginetype_id = 1,
+            qicore.profit_ratio,
+            qia.hit_rate   ) AS profitRatio,
+            /*胜率*/    IF(    sb.enginetype_id = 1,
+            qicore.sharpe_index,
+            qia.sharp_ratio   ) AS sharpe /*夏普比率*/   
+        FROM
+            qic_db.strategy_baseinfo sb   
+        LEFT JOIN
+            (
+                SELECT
+                    a.*             
+                FROM
+                    qic_db.strategy_performance_qicore a ,
+                    (                 SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time                 
+                    FROM
+                        qic_db.strategy_performance_qicore b                 
+                    GROUP BY
+                        b.strategy_id             ) spe             
+                WHERE
+                    a.strategy_id = spe.strategy_id 
+                    AND a.update_time = spe.update_time             
+                ) AS qicore    
+                    ON sb.id = qicore.strategy_id   
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*   
+                    FROM
+                        qic_db.strategy_performance_qia a ,
+                        (    SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time    
+                        FROM
+                            qic_db.strategy_performance_qia b    
+                        GROUP BY
+                            b.strategy_id   ) bm   
+                    WHERE
+                        a.strategy_id = bm.strategy_id 
+                        AND a.update_time = bm.update_time   
+                    ) AS qia    
+                        ON sb.id = qia.strategy_id  
+                WHERE
+                    sb.status IN (
+                        4, 7
+                    )  
+            ) AS strate 
+        INNER JOIN
+            qic_db.user_strategy_order ust 
+                ON strate.id = ust.stid  
+        WHERE
+            ust.uid = 1 
+        ORDER BY
+            yield DESC  limit 0,
+            20
+[DEBUG] [2013-07-08 09:24:24]  [play.Logger] -SELECT uid AS uid,stid AS stid FROM qic_db.user_strategy_collect WHERE uid=1 AND stid in (26,15,56,62,55,66,16,28,10)
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -sql==
+    SELECT
+        uid AS uid,
+        stid AS stid 
+    FROM
+        qic_db.user_strategy_collect 
+    WHERE
+        uid=1 
+        AND stid in (
+            26,15,56,62,55,66,16,28,10
+        )
+[ INFO] [2013-07-08 09:24:24]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=1 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:25]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` limit 0,
+        20
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            199,203,216,217,218,219,220,221,222,259,260,261,281,282,283,285,287,318,319,355
+        )
+[ INFO] [2013-07-08 09:24:28]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:30]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0101'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0101'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            219,281,390,392,394,397,398,414,659,922,1204,1503
+        )
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:33]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0102'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0102'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            203,283,287,393,395,400,403,404,420,485,661,663,665,795,814,829,981,982,983,1122
+        )
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:34]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0103'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0103'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            413,415,422,445,448,1105
+        )
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:36]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0204'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0204'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            285,425,454,473,618,647,648,796,832,1103,1203
+        )
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:38]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0203'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0203'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            395,405,406,407,408,409,411,423,424,451,494,507,517,550,620,649,666,744,758,759
+        )
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:39]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0202'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0202'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            283,553,802
+        )
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:40]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0205'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0205'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            282,416,417,421,426,452,799,807,825,923,1104,1143,1282
+        )
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:24:41]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            distinct   a.StockPoolCode,
+            a.`StockPoolCode` AS id,
+            a.`StockPoolName` AS poolName,
+            se.`source` AS source,
+            se.`annualizedYield` AS annualizedYield,
+            se.`yearJensenRatio` AS yearJensenRatio,
+            IF(     spe.discuss_count = 0,
+            0,
+            spe.discuss_total / spe.discuss_count   ) AS starLevel,
+            se.`updateDate` AS updateDate,
+            a.StockNum AS stockNum,
+            spe.`collect_count` AS collectCount,
+            se.`orgId` AS orgId 
+        FROM
+            stp_stockpool a   
+        LEFT JOIN
+            stockpool_ext se 
+                ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+        LEFT JOIN
+            stock_pool_ext spe     
+                ON spe.`spid` = a.`StockPoolCode`   
+        INNER JOIN
+            stp_style ss     
+                ON ss.`StockPoolCode` = a.`StockPoolCode` 
+        WHERE
+            ss.`StrategyCode`  in(
+                'I0301'
+            )  ) distTable 
+    where
+        1=1
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==
+    SELECT
+        distinct   a.StockPoolCode,
+        a.`StockPoolCode` AS id,
+        a.`StockPoolName` AS poolName,
+        se.`source` AS source,
+        se.`annualizedYield` AS annualizedYield,
+        se.`yearJensenRatio` AS yearJensenRatio,
+        IF(     spe.discuss_count = 0,
+        0,
+        spe.discuss_total / spe.discuss_count   ) AS starLevel,
+        se.`updateDate` AS updateDate,
+        a.StockNum AS stockNum,
+        spe.`collect_count` AS collectCount,
+        se.`orgId` AS orgId 
+    FROM
+        stp_stockpool a   
+    LEFT JOIN
+        stockpool_ext se 
+            ON se.`stockPoolCode` = a.`STOCKPOOLCODE`   
+    LEFT JOIN
+        stock_pool_ext spe     
+            ON spe.`spid` = a.`StockPoolCode`   
+    INNER JOIN
+        stp_style ss     
+            ON ss.`StockPoolCode` = a.`StockPoolCode` 
+    WHERE
+        ss.`StrategyCode`  in(
+            'I0301'
+        )  limit 0,20
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=2 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        qic_db.`user_stock_pool_collect`  
+    WHERE
+        uid =1 
+        AND spid in (
+            216,418,427,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,446
+        )
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==
+    SELECT
+        spid as spid 
+    FROM
+        user_stock_pool_discuss  
+    WHERE
+        uid =1
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 09:38:06]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 11:30:29]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"ed83a8b4b08a7bd1623e65aa0561e5d0a335c4b652c297d04327b6e966248f161bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-07-08 11:30:35]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 11:30:35]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 11:30:35]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 11:30:36]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 11:30:36]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 11:37:33]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 11:37:33]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 11:37:33]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 11:37:33]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 11:37:33]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 11:37:47]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 11:37:47]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 11:37:47]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 11:37:47]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 11:37:47]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 11:38:53]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 11:38:53]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 11:38:53]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 11:38:53]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 11:38:53]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 17:46:43]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:44]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 17:46:44]  [play.Logger] -sql==rollback
+[ INFO] [2013-07-08 17:46:44]  [play.Logger] -sql==SET autocommit=1
+[ERROR] [2013-07-08 17:46:44]  [play.Logger] -
+
+@6epc7n03b
+Internal Server Error (500) for request POST /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ INFO] [2013-07-08 17:46:48]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:48]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 17:46:48]  [play.Logger] -sql==rollback
+[ INFO] [2013-07-08 17:46:48]  [play.Logger] -sql==SET autocommit=1
+[ERROR] [2013-07-08 17:46:48]  [play.Logger] -
+
+@6epc7n03c
+Internal Server Error (500) for request POST /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ INFO] [2013-07-08 17:46:53]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:53]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 17:46:53]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 17:46:53]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 17:46:53]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 17:46:56]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 17:46:58]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 17:46:58]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 17:46:58]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 17:46:58]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 17:46:58]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:02:51]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:02:51]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 18:02:51]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 18:02:51]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:02:51]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:02:53]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:02:53]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 18:02:53]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 18:02:53]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:02:53]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:08]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:08]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:03:08]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:03:08]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:08]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:11]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:11]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:11]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:11]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:11]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:15]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:15]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 18:03:15]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 18:03:15]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:15]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:22]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:22]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:22]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:22]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:22]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:52]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:52]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 18:03:52]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 18:03:52]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:52]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:55]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:55]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:03:55]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:03:55]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:55]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:03:57]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:03:57]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:57]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:03:57]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:03:57]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:04:00]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:04:00]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 18:04:00]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 52
+[ INFO] [2013-07-08 18:04:00]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:04:00]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:04:17]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:04:17]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:04:17]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:04:17]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:04:17]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:04:28]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:04:28]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:04:28]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:04:28]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:04:28]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:04:32]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:04:32]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = null
+[ INFO] [2013-07-08 18:04:32]  [play.Logger] -sql==rollback
+[ INFO] [2013-07-08 18:04:32]  [play.Logger] -sql==SET autocommit=1
+[ERROR] [2013-07-08 18:04:33]  [play.Logger] -
+
+@6epc7n03d
+Internal Server Error (500) for request GET /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ INFO] [2013-07-08 18:04:46]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:04:46]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = null
+[ INFO] [2013-07-08 18:04:46]  [play.Logger] -sql==rollback
+[ INFO] [2013-07-08 18:04:46]  [play.Logger] -sql==SET autocommit=1
+[ERROR] [2013-07-08 18:04:46]  [play.Logger] -
+
+@6epc7n03e
+Internal Server Error (500) for request GET /MessagesInfos/updateMsgStatus
+
+Execution exception (In /app/bussiness/MessagesInfosService.java around line 50)
+NullPointerException occured : Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+
+play.exceptions.JavaExecutionException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read status on null object dto.UserMessagesDto (bussiness.MessagesInfosService.updateMsgStatus, line 50)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:213)
+	at bussiness.MessagesInfosService.updateMsgStatus(MessagesInfosService.java:50)
+	at controllers.MessagesInfos.updateMsgStatus(MessagesInfos.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+[ INFO] [2013-07-08 18:13:08]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:13:08]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:13:08]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 54
+[ INFO] [2013-07-08 18:13:08]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:13:08]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:13:11]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:13:11]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:13:11]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:13:11]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:13:11]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:14:16]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:14:16]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            a.`id` AS id,
+            a.`message` AS msg,
+            a.`messge_time` AS msgTime,
+            a.`status` AS STATUS,
+            a.`title` AS title             
+        FROM
+            qic_db.`user_message` a             
+        WHERE
+            a.`uid` = 1 ) distTable
+[ INFO] [2013-07-08 18:14:16]  [play.Logger] -sql==
+    SELECT
+        a.`id` AS id,
+        a.`message` AS msg,
+        a.`messge_time` AS msgTime,
+        a.`status` AS STATUS,
+        a.`title` AS title             
+    FROM
+        qic_db.`user_message` a             
+    WHERE
+        a.`uid` = 1 
+    order by
+        msgTime asc  limit 0,
+        20
+[ INFO] [2013-07-08 18:14:16]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:14:16]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-07-08 18:14:19]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-07-08 18:14:19]  [play.Logger] -sql==
+    SELECT
+        *             
+    FROM
+        qic_db.`user_message`             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:14:19]  [play.Logger] -sql==
+    UPDATE
+        qic_db.`user_message`             
+    SET
+        STATUS = 2             
+    WHERE
+        id = 56
+[ INFO] [2013-07-08 18:14:19]  [play.Logger] -sql==commit
+[ INFO] [2013-07-08 18:14:19]  [play.Logger] -sql==SET autocommit=1

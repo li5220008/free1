@@ -1,0 +1,18 @@
+[ INFO] [2013-07-02 09:00:27]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-02 09:00:31]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-02 09:00:31]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-02 09:00:31]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-02 09:00:33]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-02 09:00:33]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-07-02 09:12:28]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-02 09:12:29]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-02 09:12:29]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-02 09:12:29]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-02 09:12:30]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-02 09:12:30]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-07-02 09:13:58]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-07-02 09:13:59]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-07-02 09:13:59]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-07-02 09:13:59]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-07-02 09:14:00]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-07-02 09:14:00]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...

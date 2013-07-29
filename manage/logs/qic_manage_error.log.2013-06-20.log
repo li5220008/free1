@@ -1,0 +1,1063 @@
+[ERROR] [2013-06-20 09:49:52]  [play.Logger] -
+
+@6ek900kil
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=123456&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=123456&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=123456&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:574)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ERROR] [2013-06-20 09:51:56]  [play.Logger] -
+
+@6ek900kim
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:04:30]  [play.Logger] -
+
+@6ek91okgg
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:04:42]  [play.Logger] -
+
+@6ek91okgh
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:09:39]  [play.Logger] -
+
+@6ek91okgi
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:09:45]  [play.Logger] -
+
+@6ek91okgj
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:09:59]  [play.Logger] -
+
+@6ek91okgk
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:10:10]  [play.Logger] -
+
+@6ek91okgl
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:11:10]  [play.Logger] -
+
+@6ek91okgm
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:11:20]  [play.Logger] -
+
+@6ek91okgn
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:11:25]  [play.Logger] -
+
+@6ek91okgo
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:14:15]  [play.Logger] -
+
+@6ek91okgp
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:14:20]  [play.Logger] -
+
+@6ek91okh0
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:14:52]  [play.Logger] -
+
+@6ek91okh1
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:19:53]  [play.Logger] -
+
+@6ek91okh2
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=271&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [271]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [271]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more
+[ERROR] [2013-06-20 10:20:06]  [play.Logger] -
+
+@6ek91okh3
+Internal Server Error (500) for request GET /strategyinfos/holdposition?id=269&enginetypeId=2
+
+Database error (In {module:common}/app/dbutils/QicDbUtil.java around line 126)
+A database error occured : Wrong number of parameters: expected 2, was given 1 Query: select count(*) from ( SELECT           b.`update_time` AS updatetime,           a.`name` AS NAME,           b.`security_id` AS securityid,           b.`security_exchange` AS securityexchange,           b.`positions` AS positions,           a.`trade_variety` AS trade_variety         FROM           strategy_baseinfo a           INNER JOIN strategy_position b             ON a.`id` = b.`strategy_id`         WHERE a.`id` = ?           AND b.`update_time` >= DATE_ADD(             (SELECT               MAX(update_time)             FROM               strategy_position WHERE strategy_id = ?),             INTERVAL - 0 DAY           )         ORDER BY b.`update_time` DESC ) distTable    Parameters: [269]
+
+play.exceptions.DatabaseException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [269]
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:128)
+	at business.StrategyBaseService.getQiaPosition(StrategyBaseService.java:204)
+	at controllers.StrategyInfos.holdPosition(StrategyInfos.java:291)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select count(*) from (
+SELECT
+          b.`update_time` AS updatetime,
+          a.`name` AS NAME,
+          b.`security_id` AS securityid,
+          b.`security_exchange` AS securityexchange,
+          b.`positions` AS positions,
+          a.`trade_variety` AS trade_variety
+        FROM
+          strategy_baseinfo a
+          INNER JOIN strategy_position b
+            ON a.`id` = b.`strategy_id`
+        WHERE a.`id` = ?
+          AND b.`update_time` >= DATE_ADD(
+            (SELECT
+              MAX(update_time)
+            FROM
+              strategy_position WHERE strategy_id = ?),
+            INTERVAL - 0 DAY
+          )
+        ORDER BY b.`update_time` DESC
+) distTable  
+ Parameters: [269]
+	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:363)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:350)
+	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:211)
+	at dbutils.QicDbUtil.queryQicDbCount(QicDbUtil.java:126)
+	... 8 more

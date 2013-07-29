@@ -1,0 +1,306 @@
+[ INFO] [2013-06-27 14:24:22]  [play.Logger] -Starting D:\www\iQuant\show
+[ERROR] [2013-06-27 14:24:41]  [play.Logger] -Module redis will not be loaded because D:\work\playframework\play1\modules\redis-0.3 does not exist
+[ INFO] [2013-06-27 14:24:41]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-27 14:24:41]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-06-27 14:24:42]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-27 14:24:42]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-06-27 14:25:40]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-27 14:25:41]  [play.Logger] -Module redis is available (D:\www\iQuant\show\modules\redis-0.3)
+[ INFO] [2013-06-27 14:25:41]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-27 14:25:41]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ WARN] [2013-06-27 14:25:42]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-27 14:25:42]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: public volatile helpers.CheatSheetHelper$2.compare(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: public volatile job.StrategyYieldSmallPicJob$5.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:53]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:53]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:53]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-27 14:25:53]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[ INFO] [2013-06-27 14:25:53]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-06-27 14:25:54]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-06-27 14:25:55]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-06-27 14:25:55]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-06-27 14:25:55]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-06-27 14:25:55]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-06-27 14:25:55]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-06-27 14:25:56]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-06-27 14:25:56]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-06-27 14:25:56]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-06-27 14:25:56]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -Application 'show' is now started !
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -sql==commit
+[ INFO] [2013-06-27 14:25:57]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-27 14:26:10]  [play.Logger] -登陆处理返回json对象:{"message":"400__没有找到用户","success":false}
+[ INFO] [2013-06-27 14:26:18]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"dd6de4e1ab4a7a4996f0a76a169cccecf1c25e308db1b1bb3254da49960c1d981bd01e326ad19a66882b033be4f0ea85"}
+[ INFO] [2013-06-27 14:26:20]  [play.Logger] -miss 用户-->角色
+[ INFO] [2013-06-27 14:26:20]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-06-27 14:26:20]  [play.Logger] -sql==
+    SELECT
+        ri.id,
+        rid,
+        ur.uid uid                     
+    FROM
+        user_role  ur                     
+    LEFT JOIN
+        role_info ri                     
+            ON                             ur.rid=ri.id                     
+    WHERE
+        ur.uid=1
+[ INFO] [2013-06-27 14:26:20]  [play.Logger] -miss 角色-->权限
+[ INFO] [2013-06-27 14:26:20]  [play.Logger] -sql==
+    SELECT
+        fi.id AS id,
+        fi.name,
+        fi.pid,
+        fi.pid fpid                     
+    FROM
+        role_function rf                      
+    LEFT JOIN
+        function_info fi                     
+            ON                           rf.fid=fi.id                     
+    WHERE
+        rf.rid=1
+[ INFO] [2013-06-27 14:26:21]  [play.Logger] -sql==
+    select
+        count(*) 
+    from
+        ( SELECT
+            sb.id AS id,
+            sb.st_uuid AS 'uuid',
+            sb.name AS sname,
+            sb.provider AS provider,
+            /*提供者*/     sb.trade_type AS stype,
+            /*交易类型*/     sb.trade_variety AS tradeVariety,
+            /*交易品种*/     sb.collect_count AS collectCount,
+            /*收藏总数*/     sb.up_time AS upTime,
+            /*上架时间*/     sb.discuss_count AS discussCount,
+            /*评论总数*/     sb.enginetype_id AS enginetypeId,
+            /*引擎类型*/     sb.desp AS desp,
+            /*简介*/     sb.order_count AS orderCount,
+            /*总订阅人数*/      IF(         sb.discuss_count = 0,
+            0,
+            sb.discuss_total / sb.discuss_count     ) AS starLevel,
+            /*星级*/      IF(         sb.enginetype_id = 1,
+            qicore.yield_of_year,
+            qia.average_simple_rate_of_return * 252     ) AS yield,
+            /*年化收益率*/      IF(         sb.enginetype_id = 1,
+            qicore.profit_ratio,
+            qia.hit_rate     ) AS profitRatio,
+            /*胜率*/      IF(         sb.enginetype_id = 1,
+            qicore.sharpe_index,
+            qia.sharp_ratio     ) AS sharpe /*夏普比率*/  
+        FROM
+            qic_db.strategy_baseinfo sb     
+        LEFT JOIN
+            (
+                SELECT
+                    a.*     
+                FROM
+                    qic_db.strategy_performance_qicore a ,
+                    (         SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time         
+                    FROM
+                        qic_db.strategy_performance_qicore b         
+                    GROUP BY
+                        b.strategy_id     ) spe     
+                WHERE
+                    a.strategy_id = spe.strategy_id 
+                    AND a.update_time = spe.update_time     
+                ) AS qicore         
+                    ON sb.id = qicore.strategy_id     
+            LEFT JOIN
+                (
+                    SELECT
+                        a.*     
+                    FROM
+                        qic_db.strategy_performance_qia a ,
+                        (         SELECT
+                            b.strategy_id,
+                            MAX(b.update_time) AS update_time         
+                        FROM
+                            qic_db.strategy_performance_qia b         
+                        GROUP BY
+                            b.strategy_id     ) bm     
+                    WHERE
+                        a.strategy_id = bm.strategy_id 
+                        AND a.update_time = bm.update_time     
+                    ) AS qia         
+                        ON sb.id = qia.strategy_id 
+                WHERE
+                    sb.status IN (
+                        4, 7
+                    ) 
+                    AND sb.up_time < DATE_ADD(NOW(), INTERVAL - 3 DAY)  
+                ORDER BY
+                    yield DESC  
+            ) distTable 
+        where
+            1=1
+[ INFO] [2013-06-27 14:26:21]  [play.Logger] -sql==
+    SELECT
+        sb.id AS id,
+        sb.st_uuid AS 'uuid',
+        sb.name AS sname,
+        sb.provider AS provider,
+        /*提供者*/     sb.trade_type AS stype,
+        /*交易类型*/     sb.trade_variety AS tradeVariety,
+        /*交易品种*/     sb.collect_count AS collectCount,
+        /*收藏总数*/     sb.up_time AS upTime,
+        /*上架时间*/     sb.discuss_count AS discussCount,
+        /*评论总数*/     sb.enginetype_id AS enginetypeId,
+        /*引擎类型*/     sb.desp AS desp,
+        /*简介*/     sb.order_count AS orderCount,
+        /*总订阅人数*/      IF(         sb.discuss_count = 0,
+        0,
+        sb.discuss_total / sb.discuss_count     ) AS starLevel,
+        /*星级*/      IF(         sb.enginetype_id = 1,
+        qicore.yield_of_year,
+        qia.average_simple_rate_of_return * 252     ) AS yield,
+        /*年化收益率*/      IF(         sb.enginetype_id = 1,
+        qicore.profit_ratio,
+        qia.hit_rate     ) AS profitRatio,
+        /*胜率*/      IF(         sb.enginetype_id = 1,
+        qicore.sharpe_index,
+        qia.sharp_ratio     ) AS sharpe /*夏普比率*/  
+    FROM
+        qic_db.strategy_baseinfo sb     
+    LEFT JOIN
+        (
+            SELECT
+                a.*     
+            FROM
+                qic_db.strategy_performance_qicore a ,
+                (         SELECT
+                    b.strategy_id,
+                    MAX(b.update_time) AS update_time         
+                FROM
+                    qic_db.strategy_performance_qicore b         
+                GROUP BY
+                    b.strategy_id     ) spe     
+            WHERE
+                a.strategy_id = spe.strategy_id 
+                AND a.update_time = spe.update_time     
+            ) AS qicore         
+                ON sb.id = qicore.strategy_id     
+        LEFT JOIN
+            (
+                SELECT
+                    a.*     
+                FROM
+                    qic_db.strategy_performance_qia a ,
+                    (         SELECT
+                        b.strategy_id,
+                        MAX(b.update_time) AS update_time         
+                    FROM
+                        qic_db.strategy_performance_qia b         
+                    GROUP BY
+                        b.strategy_id     ) bm     
+                WHERE
+                    a.strategy_id = bm.strategy_id 
+                    AND a.update_time = bm.update_time     
+                ) AS qia         
+                    ON sb.id = qia.strategy_id 
+            WHERE
+                sb.status IN (
+                    4, 7
+                ) 
+                AND sb.up_time < DATE_ADD(NOW(), INTERVAL - 3 DAY)  
+            ORDER BY
+                yield DESC  limit 0,
+                20
+[DEBUG] [2013-06-27 14:26:21]  [play.Logger] -SELECT uid AS uid,stid AS stid FROM qic_db.user_strategy_collect WHERE uid=1 AND stid in (26,15,13,19,16,12,28,35,10)
+[ INFO] [2013-06-27 14:26:21]  [play.Logger] -sql==
+    SELECT
+        uid AS uid,
+        stid AS stid 
+    FROM
+        qic_db.user_strategy_collect 
+    WHERE
+        uid=1 
+        AND stid in (
+            26,15,13,19,16,12,28,35,10
+        )
+[ INFO] [2013-06-27 14:26:21]  [play.Logger] -sql==
+    select
+        usertempla0_.id as id14_,
+        usertempla0_.content as content14_,
+        usertempla0_.name as name14_,
+        usertempla0_.type as type14_,
+        usertempla0_.uid as uid14_ 
+    from
+        user_template usertempla0_ 
+    where
+        usertempla0_.uid=1 
+        and usertempla0_.type=1 
+    order by
+        usertempla0_.name DESC limit 20
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 用户-->角色
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -hit 角色-->权限
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -sql==commit
+[ INFO] [2013-06-27 14:26:23]  [play.Logger] -sql==SET autocommit=1

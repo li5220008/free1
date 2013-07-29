@@ -1,0 +1,959 @@
+[ERROR] [2013-07-10 09:17:55]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Compilation error 
+        </h1>
+        
+        <p>
+            The file <strong>{module:iquantCommon}/app/util/QicConfigProperties.java</strong> could not be compiled.
+Error raised is : <strong>bussiness.impl.SystemConfigService cannot be resolved</strong>
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/util/QicConfigProperties.java (around line 4)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">1:</span>
+                    <pre>&nbsp;package util;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">2:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">3:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">4:</span>
+                    <pre>&nbsp;import <em>bussiness.impl.SystemConfigService</em>;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">5:</span>
+                    <pre>&nbsp;import models.iquantCommon.ConfigDto;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">6:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">7:</span>
+                    <pre>&nbsp;import java.util.List;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">8:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">9:</span>
+                    <pre>&nbsp;/**</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">10:</span>
+                    <pre>&nbsp; * User: 刘建力(liujianli@gtadata.com))</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6epo75eag</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-10 09:17:56]  [play.Logger] -
+
+@6epo75h1k
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-10 09:46:03]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Compilation error 
+        </h1>
+        
+        <p>
+            The file <strong>{module:iquantCommon}/app/util/QicConfigProperties.java</strong> could not be compiled.
+Error raised is : <strong>bussiness.impl.SystemConfigService cannot be resolved</strong>
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/util/QicConfigProperties.java (around line 4)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">1:</span>
+                    <pre>&nbsp;package util;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">2:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">3:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">4:</span>
+                    <pre>&nbsp;import <em>bussiness.impl.SystemConfigService</em>;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">5:</span>
+                    <pre>&nbsp;import models.iquantCommon.ConfigDto;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">6:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">7:</span>
+                    <pre>&nbsp;import java.util.List;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">8:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">9:</span>
+                    <pre>&nbsp;/**</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">10:</span>
+                    <pre>&nbsp; * User: 刘建力(liujianli@gtadata.com))</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6epo75eah</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-10 09:46:03]  [play.Logger] -
+
+@6epo75h1l
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-10 09:46:07]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Compilation error 
+        </h1>
+        
+        <p>
+            The file <strong>{module:iquantCommon}/app/util/QicConfigProperties.java</strong> could not be compiled.
+Error raised is : <strong>bussiness.impl.SystemConfigService cannot be resolved</strong>
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/util/QicConfigProperties.java (around line 4)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">1:</span>
+                    <pre>&nbsp;package util;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">2:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">3:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">4:</span>
+                    <pre>&nbsp;import <em>bussiness.impl.SystemConfigService</em>;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">5:</span>
+                    <pre>&nbsp;import models.iquantCommon.ConfigDto;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">6:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">7:</span>
+                    <pre>&nbsp;import java.util.List;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">8:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">9:</span>
+                    <pre>&nbsp;/**</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">10:</span>
+                    <pre>&nbsp; * User: 刘建力(liujianli@gtadata.com))</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6epo75eai</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-10 09:46:07]  [play.Logger] -
+
+@6epo75h1m
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-10 09:46:17]  [play.Logger] -Bad JSON: 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Application error</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+    </head>
+    <body>
+        
+            
+
+<style type="text/css">
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, Sans;
+        background: #EEEEEE;
+    }
+    .block {
+        padding: 20px;
+        border-bottom: 1px solid #aaa;
+    }
+    #header h1 {
+        font-weight: normal;
+        font-size: 28px;
+        margin: 0;
+    }
+    #more {
+        color: #666;
+        font-size: 80%;
+        border: none;
+    }
+    #header {
+        background: #fcd2da;
+    }
+    #header p {
+        color: #333;
+    }
+    #source {
+        background: #f6f6f6;
+    }
+    #source h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    #source .lineNumber {
+        float: left;
+        display: block;
+        width: 40px;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: monospace;
+        background: #333;
+        color: #fff;
+    }
+    #source .line {
+        clear: both;
+        color: #333;
+        margin-bottom: 1px;
+    }
+    #source pre {
+        font-size: 14px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #source .error {
+        color: #c00 !important;
+    }
+    #source .error .lineNumber {
+        background: #c00;
+    }
+    #source a {
+        text-decoration: none;
+    }
+    #source a:hover * {
+        cursor: pointer !important;
+    }
+    #source a:hover pre {
+        background: #FAFFCF !important;
+    }
+    #source em {
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    #source strong {
+        font-style: normal;
+        font-weight: bold;
+    }
+</style>
+
+
+    <div id="header" class="block">
+        <h1>
+            Compilation error 
+        </h1>
+        
+        <p>
+            The file <strong>{module:iquantCommon}/app/util/QicConfigProperties.java</strong> could not be compiled.
+Error raised is : <strong>bussiness.impl.SystemConfigService cannot be resolved</strong>
+        </p>
+        
+        
+    </div>
+    
+    <div id="source" class="block">
+        <h2>In {module:iquantCommon}/app/util/QicConfigProperties.java (around line 4)</h2>
+        
+        
+            
+                <div class="line ">
+                    <span class="lineNumber">1:</span>
+                    <pre>&nbsp;package util;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">2:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">3:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line error">
+                    <span class="lineNumber">4:</span>
+                    <pre>&nbsp;import <em>bussiness.impl.SystemConfigService</em>;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">5:</span>
+                    <pre>&nbsp;import models.iquantCommon.ConfigDto;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">6:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">7:</span>
+                    <pre>&nbsp;import java.util.List;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">8:</span>
+                    <pre>&nbsp;</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">9:</span>
+                    <pre>&nbsp;/**</pre>
+                </div>
+            
+         
+            
+                <div class="line ">
+                    <span class="lineNumber">10:</span>
+                    <pre>&nbsp; * User: 刘建力(liujianli@gtadata.com))</pre>
+                </div>
+            
+         
+    </div>
+    
+    
+    
+    <div id="more" class="block">
+        This exception has been logged with id <strong>6epo75eaj</strong>
+    </div>
+
+
+
+
+        
+        
+    </body>
+</html>
+
+[ERROR] [2013-07-10 09:46:17]  [play.Logger] -
+
+@6epo75h1n
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : Cannot parse JSON (check logs)
+
+play.exceptions.JavaExecutionException: Cannot parse JSON (check logs)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: Cannot parse JSON (check logs)
+	at play.libs.WS$HttpResponse.getJson(WS.java:663)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.JsonParser.parse(JsonParser.java:65)
+	at com.google.gson.JsonParser.parse(JsonParser.java:45)
+	at play.libs.WS$HttpResponse.getJson(WS.java:660)
+	... 7 more
+Caused by: com.google.gson.stream.MalformedJsonException: Expected EOF at line 1 column 11
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1310)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:390)
+	at com.google.gson.JsonParser.parse(JsonParser.java:60)
+	... 9 more
+[ERROR] [2013-07-10 13:30:31]  [play.Logger] -
+
+@6epo75h1o
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 54)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.Users.login(Users.java:54)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:427)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:418)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:380)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:108)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:78)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:313)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:41)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=admin&p=123456&mac=123456&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:574)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:148)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:104)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:78)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:313)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:41)
+	... 3 more

@@ -1,0 +1,46 @@
+package models.common;
+
+import java.util.Date;
+
+/**
+ * QIA 绩效数据DTO
+ * User: liangbing
+ * Date: 13-4-1
+ * Time: 下午2:48
+ */
+public class QiaIndicatorDto {
+
+    public float sharpRatio;
+    public float volatility;
+    public float beta;
+    public float averageSimpleRateOfReturn;
+    public float calmarRatio;
+    public float conditionalSharpRatio;
+    public float excessReturnOnVar;
+    public float highterPartialMoments;
+    public float jensenRatio;
+    public float kappa3;
+    public float conditionalVar;
+    public float lowerPartialMoments;
+    public float maximumDrawdown;
+    public float modifiedSharpRatio;
+    public float mvar;
+    public float omega;
+    public float sortinoRatio;
+    public float treynorRatio;
+    public float upsidePotentialRatio;
+    public float var;
+    public float skewness;
+    public float kurtosis;
+    public float corrWithMarket;
+    public float hitRate;
+    public float cumsumSimpleReturn;
+    public Date updateTime;
+
+    //public float annuallySimpleRateOfReturn;   //年化收益率;
+
+    public float  getAverageSimpleRateOfReturn(){
+        return averageSimpleRateOfReturn*252;
+    }
+
+}

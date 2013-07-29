@@ -1,0 +1,327 @@
+[ INFO] [2013-06-20 09:55:41]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-20 09:55:41]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-20 09:55:41]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ INFO] [2013-06-20 09:55:41]  [play.Logger] -Module redis is available (D:\work\playframework\play1\modules\redis-0.3)
+[ WARN] [2013-06-20 09:55:41]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-20 09:55:41]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-06-20 09:56:24]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-20 09:56:24]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-20 09:56:24]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ INFO] [2013-06-20 09:56:24]  [play.Logger] -Module redis is available (D:\work\playframework\play1\modules\redis-0.3)
+[ WARN] [2013-06-20 09:56:25]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-20 09:56:25]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[ INFO] [2013-06-20 09:57:07]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-20 09:57:07]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-20 09:57:07]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ INFO] [2013-06-20 09:57:07]  [play.Logger] -Module redis is available (D:\work\playframework\play1\modules\redis-0.3)
+[ WARN] [2013-06-20 09:57:08]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-20 09:57:08]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[DEBUG] [2013-06-20 10:01:15]  [play.Logger] -ignoring method: public static dto.UserMessagesDto$MessagesStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:15]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerStatusEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: public volatile helpers.CheatSheetHelper$2.compare(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: public volatile job.StrategyYieldSmallPicJob$5.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:16]  [play.Logger] -ignoring method: public static dto.UserInfoDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:18]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:18]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerTypeEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public volatile dbutils.MapRowProcessor$CaseInsensitiveHashMap.put(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.UserInfo$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:19]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:20]  [play.Logger] -ignoring method: public static dto.UserRegisterDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:21]  [play.Logger] -ignoring method: public volatile util.HighChartDataType$1.serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) (local vars numbers differs : 3 != -1)
+[DEBUG] [2013-06-20 10:01:21]  [play.Logger] -ignoring method: static util.JPAHibernateUtil.access$1(org.hibernate.Query,java.lang.String) (local vars numbers differs : 2 != 0)
+[DEBUG] [2013-06-20 10:01:21]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:21]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: public volatile bussiness.StrategyService$1.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:22]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:01:23]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[ INFO] [2013-06-20 10:01:23]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-06-20 10:01:24]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-06-20 10:01:25]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-06-20 10:01:26]  [play.Logger] -Application 'show' is now started !
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -sql==commit
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:01:27]  [play.Logger] -没有mac地址, 根据ip[127.0.0.1]地址,随机产生一个[E06F05EA4E7d]
+[ERROR] [2013-06-20 10:01:31]  [play.Logger] -
+
+@6ek91ebk4
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 74)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.Users.login(Users.java:74)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:574)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ INFO] [2013-06-20 10:03:13]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:03:13]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:03:13]  [play.Logger] -没有mac地址, 根据ip[127.0.0.1]地址,随机产生一个[E06F05EA4E7d]
+[ERROR] [2013-06-20 10:03:14]  [play.Logger] -
+
+@6ek91ebk5
+Internal Server Error (500) for request POST /users/login?x-http-method-override=POST
+
+Execution exception (In /app/controllers/Users.java around line 74)
+RuntimeException occured : java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+
+play.exceptions.JavaExecutionException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at play.libs.ws.WSAsync$WSAsyncRequest.get(WSAsync.java:215)
+	at controllers.Users.login(Users.java:74)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at com.ning.http.client.providers.netty.NettyResponseFuture.abort(NettyResponseFuture.java:297)
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:104)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:428)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:419)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:381)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:400)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:102)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.ConnectException: Connection refused: no further information to http://localhost:9800/api/loginWithoutCryp?u=wujw&p=123456&mac=E06F05EA4E7d&pid=2
+	at com.ning.http.client.providers.netty.NettyConnectListener.operationComplete(NettyConnectListener.java:100)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:574)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.connect(NioClientSocketPipelineSink.java:440)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.processSelectedKeys(NioClientSocketPipelineSink.java:396)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink$Boss.run(NioClientSocketPipelineSink.java:312)
+	... 3 more
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-06-20 10:04:11]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-06-20 10:04:11]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-06-20 10:04:11]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-06-20 10:04:11]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-06-20 10:04:11]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -sql==commit
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -没有mac地址, 根据ip[127.0.0.1]地址,随机产生一个[E06F05EA4E7d]
+[ INFO] [2013-06-20 10:04:11]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"fbd714e3999f652c9653bef5c37030c81437032534002b03a3fb3dd13f04d99cd530ffffdc55e70a096bde1c77736d64"}
+[ INFO] [2013-06-20 10:06:51]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-20 10:06:51]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-20 10:06:51]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ INFO] [2013-06-20 10:06:51]  [play.Logger] -Module redis is available (D:\work\playframework\play1\modules\redis-0.3)
+[ WARN] [2013-06-20 10:06:51]  [play.Logger] -You're running Play! in DEV mode
+[ERROR] [2013-06-20 10:06:51]  [play.Logger] -Could not bind on port 9000
+[ INFO] [2013-06-20 10:07:31]  [play.Logger] -Starting D:\www\iQuant\show
+[ INFO] [2013-06-20 10:07:31]  [play.Logger] -Module common is available (D:\www\iQuant\show\..\common)
+[ INFO] [2013-06-20 10:07:31]  [play.Logger] -Module qicdoc is available (D:\www\iQuant\show\..\qicdoc)
+[ INFO] [2013-06-20 10:07:31]  [play.Logger] -Module redis is available (D:\work\playframework\play1\modules\redis-0.3)
+[ WARN] [2013-06-20 10:07:32]  [play.Logger] -You're running Play! in DEV mode
+[ INFO] [2013-06-20 10:07:32]  [play.Logger] -Listening for HTTP on port 9000 (Waiting a first request to start) ...
+[DEBUG] [2013-06-20 10:07:46]  [play.Logger] -ignoring method: public static dto.UserMessagesDto$MessagesStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:46]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerStatusEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: public volatile helpers.CheatSheetHelper$2.compare(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: public volatile job.StrategyYieldSmallPicJob$5.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$3.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$4.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:47]  [play.Logger] -ignoring method: public static dto.UserInfoDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeLocalCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.BackTestServerDto$ServerTypeEnum.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public volatile dbutils.MapRowProcessor$CaseInsensitiveHashMap.put(java.lang.Object,java.lang.Object) (local vars numbers differs : 2 != -1)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.StrategyDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.UserInfo$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:50]  [play.Logger] -ignoring method: public static models.common.StrategyBaseDto$StrategyStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:51]  [play.Logger] -ignoring method: public static dto.UserRegisterDto$UserStatus.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: public volatile util.HighChartDataType$1.serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) (local vars numbers differs : 3 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: static util.JPAHibernateUtil.access$1(org.hibernate.Query,java.lang.String) (local vars numbers differs : 2 != 0)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$2.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: public volatile business.UserInfoBaseService$PrevilegeRemoteCache$1.load(java.lang.Object) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeVariety.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: public volatile bussiness.StrategyService$1.handle(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$1.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createRow(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:52]  [play.Logger] -ignoring method: protected volatile job.StrategyYieldSmallPicJob$2.createKey(java.sql.ResultSet) (local vars numbers differs : 1 != -1)
+[DEBUG] [2013-06-20 10:07:53]  [play.Logger] -ignoring method: public static models.common.StrategyDto$TradeType.valueOf(java.lang.String) (local vars numbers differs : 1 != 0)
+[ INFO] [2013-06-20 10:07:53]  [play.Logger] -Connecting to redis with redis://localhost:6379
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW WARNINGS
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==/* mysql-connector-java-5.1.21 ( Revision: ${bzr.revision-id} ) */SELECT @@session.auto_increment_increment
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SHOW COLLATION
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET NAMES utf8
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET character_set_results = NULL
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET collation_connection = utf8_general_ci
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -sql==SELECT @@session.tx_isolation
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -Connected to jdbc:mysql://localhost/qic_db?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci&statementInterceptors=com.tom.mysql.ShowSqlStatementInterceptor
+[ INFO] [2013-06-20 10:07:54]  [play.Logger] -Connected to jdbc:mysql://localhost/qicore?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&connectionCollation=utf8_general_ci
+[ INFO] [2013-06-20 10:07:54]  [org.hibernate.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+[ INFO] [2013-06-20 10:07:54]  [org.hibernate.Version] -HHH000412: Hibernate Core {4.1.3.Final}
+[ INFO] [2013-06-20 10:07:54]  [org.hibernate.cfg.Environment] -HHH000206: hibernate.properties not found
+[ INFO] [2013-06-20 10:07:54]  [org.hibernate.cfg.Environment] -HHH000021: Bytecode provider name : javassist
+[ INFO] [2013-06-20 10:07:55]  [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator] -HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl
+[ INFO] [2013-06-20 10:07:55]  [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: play.db.jpa.MySQLDialect
+[ INFO] [2013-06-20 10:07:55]  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[ INFO] [2013-06-20 10:07:55]  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] -HHH000399: Using default transaction strategy (direct JDBC transactions)
+[ INFO] [2013-06-20 10:07:55]  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] -HHH000397: Using ASTQueryTranslatorFactory
+[ INFO] [2013-06-20 10:07:56]  [play.Logger] -Application 'show' is now started !
+[ INFO] [2013-06-20 10:07:56]  [play.Logger] -loading sql from  module[common]
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -sql==SET autocommit=0
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -sql==
+    SELECT
+        id,
+        key_name 'key',
+        key_value value                     
+    FROM
+        config_manage
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -sql==commit
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -sql==SET autocommit=1
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -client local ip:127.0.0.1
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -没有mac地址, 根据ip[127.0.0.1]地址,随机产生一个[E06F05EA4E7d]
+[ INFO] [2013-06-20 10:07:57]  [play.Logger] -登陆处理返回json对象:{"success":true,"token":"82b4d39b163c4e5464f7ac3acfdf42524825a6ff9c2a0a91976e5096b8bebc26d530ffffdc55e70a096bde1c77736d64"}
