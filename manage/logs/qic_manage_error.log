@@ -1,4 +1,4 @@
-[ERROR] [2013-07-29 19:42:04]  [net.sf.ehcache.Cache] -Unable to set localhost. This prevents creation of a GUID. Cause was: Free: Free
+[ERROR] [2013-07-30 17:23:57]  [net.sf.ehcache.Cache] -Unable to set localhost. This prevents creation of a GUID. Cause was: Free: Free
 java.net.UnknownHostException: Free: Free
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1402)
 	at net.sf.ehcache.Cache.<clinit>(Cache.java:200)
